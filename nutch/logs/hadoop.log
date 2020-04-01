@@ -1,0 +1,101 @@
+2020-04-01 00:09:55,838 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-04-01 00:09:56,142 INFO  segment.SegmentChecker - Segment dir is complete: crawl/segments/20200331231135.
+2020-04-01 00:09:56,144 INFO  indexer.IndexingJob - Indexer: starting at 2020-04-01 00:09:56
+2020-04-01 00:09:56,148 INFO  indexer.IndexingJob - Indexer: deleting gone documents: true
+2020-04-01 00:09:56,148 INFO  indexer.IndexingJob - Indexer: URL filtering: true
+2020-04-01 00:09:56,148 INFO  indexer.IndexingJob - Indexer: URL normalizing: true
+2020-04-01 00:09:56,149 INFO  indexer.IndexerMapReduce - IndexerMapReduce: crawldb: crawl/crawldb
+2020-04-01 00:09:56,149 INFO  indexer.IndexerMapReduce - IndexerMapReduce: linkdb: crawl/linkdb
+2020-04-01 00:09:56,149 INFO  indexer.IndexerMapReduce - IndexerMapReduces: adding segment: crawl/segments/20200331231135
+2020-04-01 00:09:56,679 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2020-04-01 00:09:56,680 INFO  mapreduce.Job - Running job: job_local1886213869_0001
+2020-04-01 00:09:56,999 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2020-04-01 00:09:57,686 INFO  mapreduce.Job - Job job_local1886213869_0001 running in uber mode : false
+2020-04-01 00:09:57,687 INFO  mapreduce.Job -  map 0% reduce 0%
+2020-04-01 00:10:01,837 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2020-04-01 00:10:02,065 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2020-04-01 00:10:02,359 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2020-04-01 00:10:02,712 INFO  mapreduce.Job -  map 100% reduce 0%
+2020-04-01 00:10:03,513 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2020-04-01 00:10:03,850 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2020-04-01 00:10:04,139 INFO  indexer.IndexWriters - Index writer org.apache.nutch.indexwriter.solr.SolrIndexWriter identified.
+2020-04-01 00:10:04,160 WARN  exchange.Exchanges - No exchange was configured. The documents will be routed to all index writers.
+2020-04-01 00:10:04,357 INFO  indexer.IndexerOutputFormat - Active IndexWriters :
+SolrIndexWriter:
+┌────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────┬────────────────────────────────┐
+│type        │Specifies the SolrClient implementation to use. This is a string value of one of the following "cloud"  or│http                            │
+│            │"http". The values represent CloudSolrServer or HttpSolrServer respectively.                              │                                │
+├────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────┤
+│url         │Defines the fully qualified URL of Solr into which data should be indexed. Multiple URL  can  be  provided│http://localhost:8983/solr/nutch│
+│            │using comma as a delimiter. When the value of type property is cloud,  the  URL  should  not  include  any│                                │
+│            │collections or cores; just the root Solr path.                                                            │                                │
+├────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────┤
+│collection  │The collection used in requests. Only used when the value of type property is cloud.                      │                                │
+├────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────┤
+│commitSize  │Defines the number of documents to send to Solr in a single update  batch.  Decrease  when  handling  very│1000                            │
+│            │large documents to prevent Nutch from running out of memory. Note: It does not explicitly trigger a server│                                │
+│            │side commit.                                                                                              │                                │
+├────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────┤
+│weight.field│Field's name where the weight of the documents will be written. If it is empty no field will be used.     │                                │
+├────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────┤
+│auth        │Whether to enable HTTP basic authentication for communicating with Solr. Use  the  username  and  password│false                           │
+│            │properties to configure your credentials.                                                                 │                                │
+├────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────┤
+│username    │The username of Solr server.                                                                              │username                        │
+├────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────┤
+│password    │The password of Solr server.                                                                              │password                        │
+└────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┴────────────────────────────────┘
+
+
+2020-04-01 00:10:04,366 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2020-04-01 00:10:04,937 WARN  more.MoreIndexingFilter - https://www.usajobs.gov/Help: can't parse erroneous date: 3/6/2020 10:37:25 AM
+2020-04-01 00:10:04,965 INFO  solr.SolrIndexWriter - Indexing 779/779 documents
+2020-04-01 00:10:04,965 INFO  solr.SolrIndexWriter - Deleting 0 documents
+2020-04-01 00:10:06,491 INFO  solr.SolrIndexWriter - SolrIndexer: deleting 213/213 documents
+2020-04-01 00:10:07,725 INFO  mapreduce.Job -  map 100% reduce 100%
+2020-04-01 00:10:07,725 INFO  mapreduce.Job - Job job_local1886213869_0001 completed successfully
+2020-04-01 00:10:07,738 INFO  mapreduce.Job - Counters: 33
+	File System Counters
+		FILE: Number of bytes read=136401607
+		FILE: Number of bytes written=166827505
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=86614
+		Map output records=86614
+		Map output bytes=23440732
+		Map output materialized bytes=23622455
+		Input split bytes=918
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=15991
+		Reduce shuffle bytes=23622455
+		Reduce input records=86614
+		Reduce output records=992
+		Spilled Records=173228
+		Shuffled Maps =6
+		Failed Shuffles=0
+		Merged Map outputs=6
+		GC time elapsed (ms)=68
+		Total committed heap usage (bytes)=1570766848
+	IndexerStatus
+		deleted (gone)=28
+		deleted (redirects)=185
+		indexed (add/update)=779
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=14259974
+	File Output Format Counters 
+		Bytes Written=0
+2020-04-01 00:10:07,738 INFO  indexer.IndexingJob - Indexer: number of documents indexed, deleted, or skipped:
+2020-04-01 00:10:07,742 INFO  indexer.IndexingJob - Indexer:     28  deleted (gone)
+2020-04-01 00:10:07,742 INFO  indexer.IndexingJob - Indexer:    185  deleted (redirects)
+2020-04-01 00:10:07,742 INFO  indexer.IndexingJob - Indexer:    779  indexed (add/update)
+2020-04-01 00:10:07,743 INFO  indexer.IndexingJob - Indexer: finished at 2020-04-01 00:10:07, elapsed: 00:00:11

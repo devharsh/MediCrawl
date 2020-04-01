@@ -1,0 +1,241 @@
+2020-03-31 02:02:56.155 INFO  (main) [   ] o.e.j.u.log Logging initialized @1166ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-03-31 02:02:56.362 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 14+36-1461
+2020-03-31 02:02:56.382 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/devharsh/Downloads/solr/server/contexts/] at interval 0
+2020-03-31 02:02:56.706 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-03-31 02:02:56.718 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-03-31 02:02:56.718 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-03-31 02:02:56.721 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-03-31 02:02:56.818 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-03-31 02:02:56.822 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.0
+2020-03-31 02:02:56.823 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-03-31 02:02:56.823 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/devharsh/Downloads/solr
+2020-03-31 02:02:56.823 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-03-31T02:02:56.823201Z
+2020-03-31 02:02:56.851 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/devharsh/Downloads/solr/server/solr
+2020-03-31 02:02:56.857 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/devharsh/Downloads/solr/server/solr/solr.xml
+2020-03-31 02:02:56.935 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@56cdfb3b, but no JMX reporters were configured - adding default JMX reporter.
+2020-03-31 02:02:57.417 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-03-31 02:02:57.648 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@6eb82908[provider=null,keyStore=null,trustStore=null]
+2020-03-31 02:02:57.648 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@6eb82908[provider=null,keyStore=null,trustStore=null]
+2020-03-31 02:02:57.803 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@12abdfb[provider=null,keyStore=null,trustStore=null]
+2020-03-31 02:02:57.803 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@12abdfb[provider=null,keyStore=null,trustStore=null]
+2020-03-31 02:02:57.819 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-03-31 02:02:57.957 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-03-31 02:02:57.960 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-03-31 02:02:58.034 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@56cdfb3b
+2020-03-31 02:02:58.034 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@56cdfb3b
+2020-03-31 02:02:58.038 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@56cdfb3b
+2020-03-31 02:02:58.085 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Users/devharsh/Downloads/solr/server/solr
+2020-03-31 02:02:58.150 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@e98770d{/solr,file:///Users/devharsh/Downloads/solr/server/solr-webapp/webapp/,AVAILABLE}{/Users/devharsh/Downloads/solr/server/solr-webapp/webapp}
+2020-03-31 02:02:58.160 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@21fd5faa{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-03-31 02:02:58.160 INFO  (main) [   ] o.e.j.s.Server Started @3173ms
+2020-03-31 02:11:27.555 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585620687452} status=0 QTime=32
+2020-03-31 02:11:27.561 INFO  (qtp1948810915-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585620687454} status=0 QTime=39
+2020-03-31 02:11:27.575 INFO  (qtp1948810915-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585620687454} status=0 QTime=2
+2020-03-31 02:41:12.566 INFO  (qtp1948810915-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585622472499} status=0 QTime=0
+2020-03-31 02:41:12.571 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=1
+2020-03-31 02:41:12.571 INFO  (qtp1948810915-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585622472500} status=0 QTime=3
+2020-03-31 02:41:22.269 INFO  (qtp1948810915-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585622472499} status=0 QTime=0
+2020-03-31 02:41:22.273 INFO  (qtp1948810915-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585622472500} status=0 QTime=3
+2020-03-31 02:41:22.275 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557} status=0 QTime=5
+2020-03-31 02:41:34.313 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585622472499} status=0 QTime=0
+2020-03-31 02:41:34.317 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585622472500} status=0 QTime=4
+2020-03-31 02:41:34.326 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585622472500} status=0 QTime=5
+2020-03-31 02:41:44.649 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585622472499} status=0 QTime=0
+2020-03-31 02:41:44.649 INFO  (qtp1948810915-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:41:44.653 INFO  (qtp1948810915-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585622472500} status=0 QTime=3
+2020-03-31 02:41:54.629 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:42:04.632 INFO  (qtp1948810915-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:42:14.638 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:42:24.411 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585622472499} status=0 QTime=0
+2020-03-31 02:42:24.422 INFO  (qtp1948810915-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585622472500} status=0 QTime=9
+2020-03-31 02:42:24.427 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1585622544405} status=0 QTime=14
+2020-03-31 02:42:27.627 INFO  (qtp1948810915-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585622472499} status=0 QTime=0
+2020-03-31 02:42:27.629 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1585622547620} status=0 QTime=0
+2020-03-31 02:42:27.632 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585622472500} status=0 QTime=4
+2020-03-31 02:42:28.677 INFO  (qtp1948810915-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1585622472499} status=0 QTime=0
+2020-03-31 02:42:28.677 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585622472499} status=0 QTime=0
+2020-03-31 02:42:28.682 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585622472500} status=0 QTime=5
+2020-03-31 02:42:29.732 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585622472499} status=0 QTime=0
+2020-03-31 02:42:29.732 INFO  (qtp1948810915-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:42:29.737 INFO  (qtp1948810915-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585622472500} status=0 QTime=4
+2020-03-31 02:42:39.721 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:42:49.719 INFO  (qtp1948810915-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:42:59.720 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:43:09.724 INFO  (qtp1948810915-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:43:19.729 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:43:29.734 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:43:39.738 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:43:49.737 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:43:59.739 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:44:09.741 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:44:19.747 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:44:29.748 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:44:39.750 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:44:49.749 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:44:59.755 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:45:09.760 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:45:19.761 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:45:29.762 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:45:39.765 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:45:49.770 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:45:59.775 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:46:09.781 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:46:19.781 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:46:29.787 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:46:39.792 INFO  (qtp1948810915-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:46:49.793 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:46:59.794 INFO  (qtp1948810915-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:47:09.799 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:47:19.805 INFO  (qtp1948810915-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:47:29.804 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:47:39.809 INFO  (qtp1948810915-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:47:49.812 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:47:59.816 INFO  (qtp1948810915-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:48:09.816 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:48:19.822 INFO  (qtp1948810915-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:48:29.822 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:48:39.821 INFO  (qtp1948810915-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:48:49.824 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:48:59.832 INFO  (qtp1948810915-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:49:09.837 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:49:19.837 INFO  (qtp1948810915-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:49:29.842 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:49:39.844 INFO  (qtp1948810915-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:49:49.844 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:49:59.850 INFO  (qtp1948810915-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 02:50:09.853 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585622472557&since=0} status=0 QTime=0
+2020-03-31 23:39:40.812 INFO  (qtp1948810915-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585697980732} status=0 QTime=6
+2020-03-31 23:39:40.828 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585697980734} status=0 QTime=23
+2020-03-31 23:39:40.834 INFO  (qtp1948810915-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585697980734} status=0 QTime=2
+2020-03-31 23:39:43.885 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585697980732} status=0 QTime=0
+2020-03-31 23:39:43.888 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585697983878&since=0} status=0 QTime=2
+2020-03-31 23:39:43.888 INFO  (qtp1948810915-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585697980734} status=0 QTime=3
+2020-03-31 23:39:46.835 INFO  (qtp1948810915-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585697980732} status=0 QTime=0
+2020-03-31 23:39:46.839 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585697980734} status=0 QTime=4
+2020-03-31 23:39:46.862 INFO  (qtp1948810915-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585697983878} status=0 QTime=27
+2020-03-31 23:39:48.238 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585697980732} status=0 QTime=0
+2020-03-31 23:39:48.239 INFO  (qtp1948810915-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1585697980732} status=0 QTime=0
+2020-03-31 23:39:48.243 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585697980734} status=0 QTime=4
+2020-03-31 23:39:50.214 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585697980732} status=0 QTime=0
+2020-03-31 23:39:50.220 INFO  (qtp1948810915-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585697980734} status=0 QTime=5
+2020-03-31 23:39:50.227 INFO  (qtp1948810915-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1585697990206} status=0 QTime=12
+2020-03-31 23:39:51.984 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585697980732} status=0 QTime=0
+2020-03-31 23:39:51.988 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1585697991978} status=0 QTime=2
+2020-03-31 23:39:51.991 INFO  (qtp1948810915-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585697980734} status=0 QTime=6
+2020-03-31 23:50:45.275 INFO  (qtp1948810915-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585698645222} status=0 QTime=0
+2020-03-31 23:50:45.276 INFO  (qtp1948810915-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585698645268&since=0} status=0 QTime=0
+2020-03-31 23:50:45.278 INFO  (qtp1948810915-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585698645223} status=0 QTime=2
+2020-03-31 23:51:27.983 INFO  (qtp1948810915-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585698645222} status=0 QTime=0
+2020-03-31 23:51:27.988 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585698645268} status=0 QTime=1
+2020-03-31 23:51:27.990 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585698645223} status=0 QTime=3
+2020-04-01 00:40:15.230 INFO  (qtp1948810915-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585701615173} status=0 QTime=2
+2020-04-01 00:40:15.236 INFO  (qtp1948810915-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585701615219} status=0 QTime=8
+2020-04-01 00:40:15.245 INFO  (qtp1948810915-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585701615173} status=0 QTime=18
+2020-04-01 00:44:28.495 INFO  (qtp1948810915-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585701868417} status=0 QTime=0
+2020-04-01 00:44:28.498 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585701868417} status=0 QTime=3
+2020-04-01 00:44:28.503 INFO  (qtp1948810915-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585701868417} status=0 QTime=3
+2020-04-01 00:44:47.134 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585701868417} status=0 QTime=0
+2020-04-01 00:44:47.141 INFO  (qtp1948810915-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585701887126&since=0} status=0 QTime=0
+2020-04-01 00:44:47.145 INFO  (qtp1948810915-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585701868417} status=0 QTime=4
+2020-04-01 00:44:49.669 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585701868417} status=0 QTime=0
+2020-04-01 00:44:49.669 INFO  (qtp1948810915-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1585701868417} status=0 QTime=0
+2020-04-01 00:44:49.674 INFO  (qtp1948810915-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585701868417} status=0 QTime=3
+2020-04-01 00:44:53.783 INFO  (qtp1948810915-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585701868417} status=0 QTime=0
+2020-04-01 00:44:53.784 INFO  (qtp1948810915-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1585701893777} status=0 QTime=0
+2020-04-01 00:44:53.786 INFO  (qtp1948810915-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585701868417} status=0 QTime=2
+2020-04-01 00:44:58.048 INFO  (qtp1948810915-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585701868417} status=0 QTime=0
+2020-04-01 00:44:58.056 INFO  (qtp1948810915-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585701868417} status=0 QTime=8
+2020-04-01 00:44:58.063 INFO  (qtp1948810915-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1585701898041} status=0 QTime=15
+2020-04-01 02:28:14.955 INFO  (qtp1948810915-56) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585708094872} status=0 QTime=0
+2020-04-01 02:28:14.961 INFO  (qtp1948810915-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585708094873} status=0 QTime=4
+2020-04-01 02:28:14.967 INFO  (qtp1948810915-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585708094873} status=0 QTime=3
+2020-04-01 03:45:07.063 INFO  (qtp1948810915-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=4
+2020-04-01 03:45:07.091 INFO  (qtp1948810915-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=2
+2020-04-01 03:45:07.118 INFO  (qtp1948810915-56) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=nutch&action=STATUS&wt=json} status=0 QTime=1
+2020-04-01 03:45:07.156 INFO  (qtp1948810915-54) [   x:nutch] o.a.s.h.a.CoreAdminOperation core create command name=nutch&action=CREATE&instanceDir=nutch&wt=json
+2020-04-01 03:45:07.250 WARN  (qtp1948810915-54) [   x:nutch] o.a.s.c.SolrConfig Couldn't add files from /Users/devharsh/Downloads/solr/contrib/ltr/lib filtered by .*\.jar to classpath: /Users/devharsh/Downloads/solr/contrib/ltr/lib
+2020-04-01 03:45:07.256 INFO  (qtp1948810915-54) [   x:nutch] o.a.s.c.SolrResourceLoader [nutch] Added 1 libs to classloader, from paths: [/Users/devharsh/Downloads/solr/dist]
+2020-04-01 03:45:07.501 INFO  (qtp1948810915-54) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.0
+2020-04-01 03:45:07.630 INFO  (qtp1948810915-54) [   x:nutch] o.a.s.s.ManagedIndexSchemaFactory The schema is configured as managed, but managed schema resource managed-schema not found - loading non-managed schema schema.xml instead
+2020-04-01 03:45:07.644 WARN  (qtp1948810915-54) [   x:nutch] o.a.s.s.IndexSchema [nutch] schema has no name!
+2020-04-01 03:45:07.660 WARN  (qtp1948810915-54) [   x:nutch] o.a.s.s.IndexSchema no uniqueKey specified in schema.
+2020-04-01 03:45:07.663 INFO  (qtp1948810915-54) [   x:nutch] o.a.s.s.IndexSchema Loaded schema null/1.0 with uniqueid field null
+2020-04-01 03:45:07.677 ERROR (qtp1948810915-54) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'nutch': Unable to create core [nutch] Caused by: null
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1256)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:93)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:362)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:397)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:181)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:842)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:808)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:559)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [nutch]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1327)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1217)
+	... 47 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core nutch: null
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:88)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302)
+	... 48 more
+Caused by: java.lang.NullPointerException
+	at org.apache.solr.response.SchemaXmlWriter.writeResponse(SchemaXmlWriter.java:85)
+	at org.apache.solr.schema.IndexSchema.persist(IndexSchema.java:413)
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchema(ManagedIndexSchema.java:135)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.upgradeToManagedSchema(ManagedIndexSchemaFactory.java:268)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:182)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:46)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:145)
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:83)
+	... 49 more
+
+2020-04-01 03:45:07.679 INFO  (qtp1948810915-54) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=nutch&action=CREATE&instanceDir=nutch&wt=json} status=400 QTime=524
+2020-04-01 03:47:29.429 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@21fd5faa{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-04-01 03:47:29.429 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-04-01 03:47:29.435 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=2004655561
+2020-04-01 03:47:29.436 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-04-01 03:47:29.437 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2d9dff65: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@8a10350
+2020-04-01 03:47:29.444 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-04-01 03:47:29.445 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@d109c4f: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@5ad8b20
+2020-04-01 03:47:29.447 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-04-01 03:47:29.447 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3968bc60: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@224ce2af
+2020-04-01 03:47:29.461 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@e98770d{/solr,null,UNAVAILABLE}{/Users/devharsh/Downloads/solr/server/solr-webapp/webapp}
