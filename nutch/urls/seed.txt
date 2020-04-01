@@ -1,7 +1,5 @@
-https://www.who.int/
-https://www.cdc.gov/
+https://www.mayoclinic.org/
 https://www.webmd.com/
-https://www.medicinenet.com/script/main/hp.asp
-https://www.medicalnewstoday.com/
 https://www.adam.com/
-
+https://www.medicalnewstoday.com/
+https://www.cdc.gov/
