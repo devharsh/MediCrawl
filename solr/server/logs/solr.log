@@ -3519,3 +3519,19 @@ Caused by: org.apache.solr.common.SolrException: can not use FieldCache on a fie
 2020-04-02 03:10:11.700 INFO  (qtp1309335839-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585796510548} status=0 QTime=0
 2020-04-02 03:10:11.702 INFO  (qtp1309335839-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585796510578&since=0} status=0 QTime=0
 2020-04-02 03:10:11.708 INFO  (qtp1309335839-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585796510549} status=0 QTime=6
+2020-04-02 03:17:30.369 INFO  (qtp1309335839-50) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=breast+cancer&fl=url,title,[features]&rq={!ltr+model%3DmyModel+efi.query%3Dhello+world}} hits=1122 status=0 QTime=1
+2020-04-02 03:18:32.909 INFO  (qtp1309335839-44) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=breast+cancer&fl=url,title} hits=1122 status=0 QTime=0
+2020-04-02 06:40:31.346 INFO  (Thread-0) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@73194df{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-04-02 06:40:31.346 INFO  (Thread-0) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-04-02 06:40:31.350 INFO  (Thread-0) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1655955258
+2020-04-02 06:40:31.351 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@6b1a476d
+2020-04-02 06:40:31.352 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=SolrCore@6b1a476d
+2020-04-02 06:40:31.352 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@384212b5: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch / com.codahale.metrics.MetricRegistry@10a03f5b
+2020-04-02 06:40:31.371 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-04-02 06:40:31.384 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-04-02 06:40:31.384 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3374b5bc: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@80a32c2
+2020-04-02 06:40:31.387 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-04-02 06:40:31.387 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@43e9089: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@34dddd3c
+2020-04-02 06:40:31.388 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-04-02 06:40:31.389 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3c5dbdf8: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@795ae074
+2020-04-02 06:40:31.401 INFO  (Thread-0) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1522d8a0{/solr,null,UNAVAILABLE}{/Users/devharsh/Downloads/MediCrawl/solr/server/solr-webapp/webapp}
