@@ -1,0 +1,16 @@
+{
+  "class" : "org.apache.solr.ltr.model.LinearModel",
+  "name" : "myModel",
+  "features" : [
+    { "name" : "contentLength" },
+    { "name" : "titleLength" },
+    { "name" : "originalScore" }
+  ],
+  "params" : {
+    "weights" : {
+      "contentLength" : 1.0,
+      "titleLength" : 0.1,
+      "originalScore" : 0.5
+    }
+  }
+}

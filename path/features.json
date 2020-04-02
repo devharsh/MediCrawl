@@ -1,0 +1,21 @@
+[
+  {
+    "name" : "originalScore",
+    "class" : "org.apache.solr.ltr.feature.OriginalScoreFeature",
+    "params" : {}
+  },
+  {
+    "name" : "titleLength",
+    "class" : "org.apache.solr.ltr.feature.FieldLengthFeature",
+    "params" : {
+      "field":"title"
+    }
+  },
+  {
+    "name" : "contentLength",
+    "class" : "org.apache.solr.ltr.feature.FieldLengthFeature",
+    "params" : {
+      "field":"content"
+    }
+  }
+]

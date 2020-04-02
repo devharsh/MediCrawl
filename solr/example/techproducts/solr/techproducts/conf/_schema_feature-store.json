@@ -1,0 +1,19 @@
+{
+  "initArgs":{},
+  "initializedOn":"2020-04-02T00:18:21.073Z",
+  "managedList":[
+    {
+      "name":"documentRecency",
+      "class":"org.apache.solr.ltr.feature.SolrFeature",
+      "params":{"q":"{!func}recip( ms(NOW,last_modified), 3.16e-11, 1, 1)"},
+      "store":"_DEFAULT_"},
+    {
+      "name":"isBook",
+      "class":"org.apache.solr.ltr.feature.SolrFeature",
+      "params":{"fq":["{!terms f=cat}book"]},
+      "store":"_DEFAULT_"},
+    {
+      "name":"originalScore",
+      "class":"org.apache.solr.ltr.feature.OriginalScoreFeature",
+      "params":{},
+      "store":"_DEFAULT_"}]}

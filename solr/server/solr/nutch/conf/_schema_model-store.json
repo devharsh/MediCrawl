@@ -1,0 +1,21 @@
+{
+  "initArgs":{},
+  "initializedOn":"2020-04-02T00:24:05.988Z",
+  "managedList":[{
+      "name":"myModel",
+      "class":"org.apache.solr.ltr.model.LinearModel",
+      "store":"_DEFAULT_",
+      "features":[
+        {
+          "name":"contentLength",
+          "norm":{"class":"org.apache.solr.ltr.norm.IdentityNormalizer"}},
+        {
+          "name":"titleLength",
+          "norm":{"class":"org.apache.solr.ltr.norm.IdentityNormalizer"}},
+        {
+          "name":"originalScore",
+          "norm":{"class":"org.apache.solr.ltr.norm.IdentityNormalizer"}}],
+      "params":{"weights":{
+          "contentLength":1.0,
+          "titleLength":0.1,
+          "originalScore":0.5}}}]}

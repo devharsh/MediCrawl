@@ -1,0 +1,20 @@
+{
+  "initArgs":{},
+  "initializedOn":"2020-04-02T00:24:05.985Z",
+  "updatedSinceInit":"2020-04-02T02:37:14.647Z",
+  "managedList":[
+    {
+      "name":"originalScore",
+      "class":"org.apache.solr.ltr.feature.OriginalScoreFeature",
+      "params":{},
+      "store":"_DEFAULT_"},
+    {
+      "name":"titleLength",
+      "class":"org.apache.solr.ltr.feature.FieldLengthFeature",
+      "params":{"field":"title"},
+      "store":"_DEFAULT_"},
+    {
+      "name":"contentLength",
+      "class":"org.apache.solr.ltr.feature.FieldLengthFeature",
+      "params":{"field":"content"},
+      "store":"_DEFAULT_"}]}

@@ -1,0 +1,381 @@
+2020-04-02 00:18:15.335 INFO  (main) [   ] o.e.j.u.log Logging initialized @771ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-04-02 00:18:15.494 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 14+36-1461
+2020-04-02 00:18:15.510 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/devharsh/Downloads/MediCrawl/solr/server/contexts/] at interval 0
+2020-04-02 00:18:15.729 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-04-02 00:18:15.739 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-04-02 00:18:15.739 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-04-02 00:18:15.740 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-04-02 00:18:15.808 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-04-02 00:18:15.812 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.0
+2020-04-02 00:18:15.812 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-04-02 00:18:15.812 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/devharsh/Downloads/MediCrawl/solr
+2020-04-02 00:18:15.812 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-02T00:18:15.812868Z
+2020-04-02 00:18:15.840 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/devharsh/Downloads/MediCrawl/solr/example/techproducts/solr
+2020-04-02 00:18:15.845 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/devharsh/Downloads/MediCrawl/solr/example/techproducts/solr/solr.xml
+2020-04-02 00:18:15.893 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@56cdfb3b, but no JMX reporters were configured - adding default JMX reporter.
+2020-04-02 00:18:16.517 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-04-02 00:18:16.668 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@6eb82908[provider=null,keyStore=null,trustStore=null]
+2020-04-02 00:18:16.668 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@6eb82908[provider=null,keyStore=null,trustStore=null]
+2020-04-02 00:18:16.799 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@12abdfb[provider=null,keyStore=null,trustStore=null]
+2020-04-02 00:18:16.799 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@12abdfb[provider=null,keyStore=null,trustStore=null]
+2020-04-02 00:18:16.814 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-04-02 00:18:16.946 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-04-02 00:18:16.949 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-04-02 00:18:17.010 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@56cdfb3b
+2020-04-02 00:18:17.011 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@56cdfb3b
+2020-04-02 00:18:17.014 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@56cdfb3b
+2020-04-02 00:18:17.042 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Users/devharsh/Downloads/MediCrawl/solr/example/techproducts/solr
+2020-04-02 00:18:17.087 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@e98770d{/solr,file:///Users/devharsh/Downloads/MediCrawl/solr/server/solr-webapp/webapp/,AVAILABLE}{/Users/devharsh/Downloads/MediCrawl/solr/server/solr-webapp/webapp}
+2020-04-02 00:18:17.095 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@21fd5faa{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-04-02 00:18:17.095 INFO  (main) [   ] o.e.j.s.Server Started @2533ms
+2020-04-02 00:18:19.548 INFO  (qtp1948810915-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=24
+2020-04-02 00:18:19.586 INFO  (qtp1948810915-19) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=techproducts&action=STATUS&wt=json} status=0 QTime=0
+2020-04-02 00:18:19.597 INFO  (qtp1948810915-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=2
+2020-04-02 00:18:19.604 INFO  (qtp1948810915-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=2
+2020-04-02 00:18:19.609 INFO  (qtp1948810915-23) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=techproducts&action=STATUS&wt=json} status=0 QTime=0
+2020-04-02 00:18:19.665 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.h.a.CoreAdminOperation core create command name=techproducts&action=CREATE&instanceDir=techproducts&wt=json
+2020-04-02 00:18:19.727 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.c.SolrResourceLoader [techproducts] Added 63 libs to classloader, from paths: [/Users/devharsh/Downloads/MediCrawl/solr/contrib/clustering/lib, /Users/devharsh/Downloads/MediCrawl/solr/contrib/extraction/lib, /Users/devharsh/Downloads/MediCrawl/solr/contrib/langid/lib, /Users/devharsh/Downloads/MediCrawl/solr/contrib/velocity/lib, /Users/devharsh/Downloads/MediCrawl/solr/dist]
+2020-04-02 00:18:19.978 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.0
+2020-04-02 00:18:20.003 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2020-04-02 00:18:20.108 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.s.IndexSchema [techproducts] Schema name=example
+2020-04-02 00:18:20.547 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2020-04-02 00:18:20.547 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2020-04-02 00:18:20.547 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2020-04-02 00:18:20.547 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2020-04-02 00:18:20.557 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2020-04-02 00:18:20.557 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2020-04-02 00:18:20.557 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2020-04-02 00:18:20.557 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2020-04-02 00:18:20.557 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2020-04-02 00:18:20.591 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.c.CoreContainer Creating SolrCore 'techproducts' using configuration from instancedir /Users/devharsh/Downloads/MediCrawl/solr/example/techproducts/solr/techproducts, trusted=true
+2020-04-02 00:18:20.599 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts' (registry 'solr.core.techproducts') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@56cdfb3b
+2020-04-02 00:18:20.615 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.c.SolrCore [[techproducts] ] Opening new SolrCore at [/Users/devharsh/Downloads/MediCrawl/solr/example/techproducts/solr/techproducts], dataDir=[/Users/devharsh/Downloads/MediCrawl/solr/example/techproducts/solr/techproducts/data/]
+2020-04-02 00:18:20.707 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-04-02 00:18:21.036 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-04-02 00:18:21.036 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-04-02 00:18:21.044 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-04-02 00:18:21.044 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-04-02 00:18:21.058 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.s.SolrIndexSearcher Opening [Searcher@5277e99c[techproducts] main]
+2020-04-02 00:18:21.065 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/devharsh/Downloads/MediCrawl/solr/example/techproducts/solr/techproducts/conf
+2020-04-02 00:18:21.066 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=/Users/devharsh/Downloads/MediCrawl/solr/example/techproducts/solr/techproducts/conf
+2020-04-02 00:18:21.066 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2020-04-02 00:18:21.067 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=/Users/devharsh/Downloads/MediCrawl/solr/example/techproducts/solr/techproducts/conf
+2020-04-02 00:18:21.067 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+2020-04-02 00:18:21.067 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
+2020-04-02 00:18:21.068 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/stopwords/english
+2020-04-02 00:18:21.068 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=/Users/devharsh/Downloads/MediCrawl/solr/example/techproducts/solr/techproducts/conf
+2020-04-02 00:18:21.068 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+2020-04-02 00:18:21.069 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+2020-04-02 00:18:21.070 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/synonyms/english
+2020-04-02 00:18:21.072 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.ltr.store.rest.ManagedFeatureStore for path /schema/feature-store
+2020-04-02 00:18:21.072 WARN  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResource No stored data found for /schema/feature-store
+2020-04-02 00:18:21.072 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.l.s.r.ManagedFeatureStore ------ managed feature ~ loading ------
+2020-04-02 00:18:21.073 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResource Notified 1 observers of /schema/feature-store
+2020-04-02 00:18:21.073 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.RestManager Registered new managed resource /schema/feature-store
+2020-04-02 00:18:21.076 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.ltr.store.rest.ManagedModelStore for path /schema/model-store
+2020-04-02 00:18:21.076 WARN  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResource No stored data found for /schema/model-store
+2020-04-02 00:18:21.077 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.l.s.r.ManagedModelStore INIT model store
+2020-04-02 00:18:21.077 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.l.s.r.ManagedModelStore ------ managed models ~ loading ------
+2020-04-02 00:18:21.077 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.ManagedResource Notified 1 observers of /schema/model-store
+2020-04-02 00:18:21.077 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.r.RestManager Registered new managed resource /schema/model-store
+2020-04-02 00:18:21.088 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-04-02 00:18:21.095 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-04-02 00:18:21.101 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2020-04-02 00:18:21.105 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2020-04-02 00:18:21.117 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2020-04-02 00:18:21.118 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/devharsh/Downloads/MediCrawl/solr/example/techproducts/solr/techproducts/conf/elevate.xml
+2020-04-02 00:18:21.127 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-04-02 00:18:21.131 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1662817875925139456
+2020-04-02 00:18:21.134 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5277e99c[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-04-02 00:18:21.135 INFO  (qtp1948810915-24) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=techproducts&action=CREATE&instanceDir=techproducts&wt=json} status=0 QTime=1470
+2020-04-02 00:18:21.185 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=50
+2020-04-02 00:18:21.186 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-04-02 00:18:21.186 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-04-02 00:18:21.186 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2020-04-02 00:18:21.191 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts] Registered new searcher Searcher@5277e99c[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-04-02 00:18:21.282 INFO  (qtp1948810915-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1662817876006928384), VS1GB400C3 (1662817876078231552), VDBDB1A16 (1662817876080328704)]} 0 130
+2020-04-02 00:18:21.295 INFO  (qtp1948810915-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[MA147LL/A (1662817876091863040)]} 0 6
+2020-04-02 00:18:21.301 INFO  (qtp1948810915-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1662817876100251648), IW-02 (1662817876102348800)]} 0 3
+2020-04-02 00:18:21.306 INFO  (qtp1948810915-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[9885A004 (1662817876106543104)]} 0 2
+2020-04-02 00:18:21.310 INFO  (qtp1948810915-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[VA902B (1662817876111785984)]} 0 1
+2020-04-02 00:18:21.317 INFO  (qtp1948810915-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1662817876115980288), 100-435805 (1662817876119126016)]} 0 4
+2020-04-02 00:18:21.323 INFO  (qtp1948810915-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[0579B002 (1662817876124368896)]} 0 2
+2020-04-02 00:18:21.327 INFO  (qtp1948810915-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[3007WFP (1662817876129611776)]} 0 1
+2020-04-02 00:18:21.334 INFO  (qtp1948810915-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[adata (1662817876133806080), apple (1662817876134854656), asus (1662817876134854657), ati (1662817876135903232), belkin (1662817876135903233), canon (1662817876135903234), corsair (1662817876135903235), dell (1662817876136951808), maxtor (1662817876136951809), samsung (1662817876138000384), ... (11 adds)]} 0 4
+2020-04-02 00:18:21.340 INFO  (qtp1948810915-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[SP2514N (1662817876142194688), 6H500F0 (1662817876143243264)]} 0 2
+2020-04-02 00:18:21.345 INFO  (qtp1948810915-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[USD (1662817876147437568), EUR (1662817876148486144), GBP (1662817876148486145), NOK (1662817876149534720)]} 0 2
+2020-04-02 00:18:21.351 INFO  (qtp1948810915-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[UTF8TEST (1662817876153729024)]} 0 3
+2020-04-02 00:18:21.365 INFO  (qtp1948810915-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[GB18030TEST (1662817876169457664)]} 0 11
+2020-04-02 00:18:21.370 INFO  (qtp1948810915-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[SOLR1000 (1662817876174700544)]} 0 1
+2020-04-02 00:18:21.372 INFO  (qtp1948810915-18) [   x:techproducts] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1662817876177846272,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-04-02 00:18:21.372 INFO  (qtp1948810915-18) [   x:techproducts] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@4de46e18 commitCommandVersion:1662817876177846272
+2020-04-02 00:18:21.513 INFO  (qtp1948810915-18) [   x:techproducts] o.a.s.s.SolrIndexSearcher Opening [Searcher@6f5b254d[techproducts] main]
+2020-04-02 00:18:21.514 INFO  (qtp1948810915-18) [   x:techproducts] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-04-02 00:18:21.514 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6f5b254d[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.0):C32:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585786701444}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-04-02 00:18:21.514 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-04-02 00:18:21.519 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts] Registered new searcher Searcher@6f5b254d[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.0):C32:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585786701444}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-04-02 00:18:21.523 INFO  (qtp1948810915-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={commit=true}{commit=} 0 151
+2020-04-02 00:18:44.439 INFO  (qtp1948810915-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585786724360} status=0 QTime=0
+2020-04-02 00:18:44.443 INFO  (qtp1948810915-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585786724360} status=0 QTime=3
+2020-04-02 00:18:44.450 INFO  (qtp1948810915-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585786724360} status=0 QTime=3
+2020-04-02 00:18:46.563 INFO  (qtp1948810915-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585786724360} status=0 QTime=0
+2020-04-02 00:18:46.571 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585786724360} status=0 QTime=5
+2020-04-02 00:18:46.571 INFO  (qtp1948810915-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1585786724360} status=0 QTime=5
+2020-04-02 00:18:46.623 INFO  (qtp1948810915-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585786724360} status=0 QTime=0
+2020-04-02 00:18:46.623 INFO  (qtp1948810915-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1585786724360} status=0 QTime=1
+2020-04-02 00:18:46.626 INFO  (qtp1948810915-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585786724360} status=0 QTime=3
+2020-04-02 00:18:55.534 INFO  (qtp1948810915-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1585786724360} status=0 QTime=0
+2020-04-02 00:18:55.537 INFO  (qtp1948810915-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585786735521&since=0} status=0 QTime=2
+2020-04-02 00:18:55.546 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1585786724360} status=0 QTime=12
+2020-04-02 00:19:06.086 INFO  (qtp1948810915-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585786735521&since=0} status=0 QTime=0
+2020-04-02 00:19:16.307 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585786735521&since=0} status=0 QTime=0
+2020-04-02 00:19:27.346 INFO  (qtp1948810915-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585786735521&since=0} status=0 QTime=0
+2020-04-02 00:19:38.230 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585786735521&since=0} status=0 QTime=0
+2020-04-02 00:19:49.289 INFO  (qtp1948810915-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585786735521&since=0} status=0 QTime=0
+2020-04-02 00:19:59.290 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585786735521&since=0} status=0 QTime=0
+2020-04-02 00:20:10.164 INFO  (qtp1948810915-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585786735521&since=0} status=0 QTime=0
+2020-04-02 00:20:20.177 INFO  (qtp1948810915-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585786735521&since=0} status=0 QTime=0
+2020-04-02 00:20:30.184 INFO  (qtp1948810915-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1585786735521&since=0} status=0 QTime=0
+2020-04-02 00:20:36.469 INFO  (qtp1948810915-22) [   x:techproducts] o.e.j.s.h.C.solr SolrRestApi: [Restlet] ServerServlet: component class is null
+2020-04-02 00:20:36.582 INFO  (qtp1948810915-22) [   x:techproducts] o.e.j.s.h.C.solr SolrRestApi: [Restlet] Attaching application: org.apache.solr.rest.SolrSchemaRestApi@5209ba59 to URI: /solr/schema
+2020-04-02 00:20:36.596 INFO  (qtp1948810915-22) [   x:techproducts] o.a.s.r.SolrSchemaRestApi createInboundRoot started for /schema
+2020-04-02 00:20:36.600 INFO  (qtp1948810915-22) [   x:techproducts] o.a.s.r.RestManager Attached managed resource at path: /analysis/stopwords/english
+2020-04-02 00:20:36.600 INFO  (qtp1948810915-22) [   x:techproducts] o.a.s.r.RestManager Attached managed resource at path: /analysis/synonyms/english
+2020-04-02 00:20:36.600 INFO  (qtp1948810915-22) [   x:techproducts] o.a.s.r.RestManager Attached managed resource at path: /feature-store
+2020-04-02 00:20:36.600 INFO  (qtp1948810915-22) [   x:techproducts] o.a.s.r.RestManager Attached managed resource at path: /managed
+2020-04-02 00:20:36.600 INFO  (qtp1948810915-22) [   x:techproducts] o.a.s.r.RestManager Attached managed resource at path: /model-store
+2020-04-02 00:20:36.600 INFO  (qtp1948810915-22) [   x:techproducts] o.a.s.r.RestManager Attached 5 ManagedResource endpoints to Restlet router: /schema
+2020-04-02 00:20:36.600 INFO  (qtp1948810915-22) [   x:techproducts] o.a.s.r.SolrSchemaRestApi createInboundRoot complete for /schema
+2020-04-02 00:20:36.606 INFO  (qtp1948810915-22) [   x:techproducts] o.a.s.r.RestManager Found ManagedResource [org.apache.solr.ltr.store.rest.ManagedFeatureStore@45e72898] for /schema/feature-store
+2020-04-02 00:20:36.607 INFO  (qtp1948810915-22) [   x:techproducts] o.a.s.r.RestManager [techproducts]  webapp=/solr path=/schema/feature-store params={} status=0 QTime=144
+2020-04-02 00:20:56.405 INFO  (qtp1948810915-23) [   x:techproducts] o.a.s.r.RestManager Found ManagedResource [org.apache.solr.ltr.store.rest.ManagedFeatureStore@45e72898] for /schema/feature-store
+2020-04-02 00:20:56.407 ERROR (qtp1948810915-23) [   x:techproducts] o.a.s.r.RestManager null:org.restlet.resource.ResourceException: Bad Request (400) - Empty request body!
+	at org.apache.solr.rest.RestManager$ManagedEndpoint.parseJsonFromRequestBody(RestManager.java:423)
+	at org.apache.solr.rest.RestManager$ManagedEndpoint.put(RestManager.java:343)
+	at org.restlet.resource.ServerResource.doHandle(ServerResource.java:434)
+	at org.restlet.resource.ServerResource.doConditionalHandle(ServerResource.java:350)
+	at org.restlet.resource.ServerResource.handle(ServerResource.java:1020)
+	at org.restlet.resource.Finder.handle(Finder.java:236)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:641)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.engine.application.StatusFilter.doHandle(StatusFilter.java:140)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:202)
+	at org.restlet.engine.application.ApplicationHelper.handle(ApplicationHelper.java:77)
+	at org.restlet.Application.handle(Application.java:385)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:641)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:641)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:202)
+	at org.restlet.Component.handle(Component.java:408)
+	at org.restlet.Server.handle(Server.java:507)
+	at org.restlet.engine.connector.ServerHelper.handle(ServerHelper.java:63)
+	at org.restlet.engine.adapter.HttpServerHelper.handle(HttpServerHelper.java:143)
+	at org.restlet.ext.servlet.ServerServlet.service(ServerServlet.java:1117)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsyncServlet.service(ServletHolder.java:1400)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:760)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:547)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:608)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:220)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:79)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:429)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2020-04-02 00:20:56.407 INFO  (qtp1948810915-23) [   x:techproducts] o.a.s.r.RestManager [techproducts]  webapp=/solr path=/schema/feature-store params={} msg={Bad Request (400) - Empty request body!} status=500 QTime=4
+2020-04-02 00:21:22.505 INFO  (qtp1948810915-25) [   x:techproducts] o.a.s.r.RestManager Found ManagedResource [org.apache.solr.ltr.store.rest.ManagedFeatureStore@45e72898] for /schema/feature-store
+2020-04-02 00:21:22.506 ERROR (qtp1948810915-25) [   x:techproducts] o.a.s.r.RestManager null:org.restlet.resource.ResourceException: Bad Request (400) - Empty request body!
+	at org.apache.solr.rest.RestManager$ManagedEndpoint.parseJsonFromRequestBody(RestManager.java:423)
+	at org.apache.solr.rest.RestManager$ManagedEndpoint.put(RestManager.java:343)
+	at org.restlet.resource.ServerResource.doHandle(ServerResource.java:434)
+	at org.restlet.resource.ServerResource.doConditionalHandle(ServerResource.java:350)
+	at org.restlet.resource.ServerResource.handle(ServerResource.java:1020)
+	at org.restlet.resource.Finder.handle(Finder.java:236)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:641)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.engine.application.StatusFilter.doHandle(StatusFilter.java:140)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:202)
+	at org.restlet.engine.application.ApplicationHelper.handle(ApplicationHelper.java:77)
+	at org.restlet.Application.handle(Application.java:385)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:641)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.routing.Router.doHandle(Router.java:422)
+	at org.restlet.routing.Router.handle(Router.java:641)
+	at org.restlet.routing.Filter.doHandle(Filter.java:150)
+	at org.restlet.routing.Filter.handle(Filter.java:197)
+	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:202)
+	at org.restlet.Component.handle(Component.java:408)
+	at org.restlet.Server.handle(Server.java:507)
+	at org.restlet.engine.connector.ServerHelper.handle(ServerHelper.java:63)
+	at org.restlet.engine.adapter.HttpServerHelper.handle(HttpServerHelper.java:143)
+	at org.restlet.ext.servlet.ServerServlet.service(ServerServlet.java:1117)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsyncServlet.service(ServletHolder.java:1400)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:760)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:547)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:608)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:220)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:79)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:429)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2020-04-02 00:21:22.506 INFO  (qtp1948810915-25) [   x:techproducts] o.a.s.r.RestManager [techproducts]  webapp=/solr path=/schema/feature-store params={} msg={Bad Request (400) - Empty request body!} status=500 QTime=1
+2020-04-02 00:21:48.909 INFO  (qtp1948810915-23) [   x:techproducts] o.a.s.r.RestManager Found ManagedResource [org.apache.solr.ltr.store.rest.ManagedFeatureStore@45e72898] for /schema/feature-store
+2020-04-02 00:21:48.909 INFO  (qtp1948810915-23) [   x:techproducts] o.a.s.r.RestManager [techproducts]  webapp=/solr path=/schema/feature-store params={} status=0 QTime=1
+2020-04-02 00:22:03.935 INFO  (qtp1948810915-20) [   x:techproducts] o.a.s.r.RestManager Found ManagedResource [org.apache.solr.ltr.store.rest.ManagedFeatureStore@45e72898] for /schema/feature-store
+2020-04-02 00:22:03.935 INFO  (qtp1948810915-20) [   x:techproducts] o.a.s.r.ManagedResource Processing update to /schema/feature-store: [{name=documentRecency, class=org.apache.solr.ltr.feature.SolrFeature, params={q={!func}recip( ms(NOW,last_modified), 3.16e-11, 1, 1)}}, {name=isBook, class=org.apache.solr.ltr.feature.SolrFeature, params={fq=[{!terms f=cat}book]}}, {name=originalScore, class=org.apache.solr.ltr.feature.OriginalScoreFeature, params={}}] is a java.util.ArrayList
+2020-04-02 00:22:03.935 INFO  (qtp1948810915-20) [   x:techproducts] o.a.s.l.s.r.ManagedFeatureStore register feature based on {name=documentRecency, class=org.apache.solr.ltr.feature.SolrFeature, params={q={!func}recip( ms(NOW,last_modified), 3.16e-11, 1, 1)}}
+2020-04-02 00:22:03.946 INFO  (qtp1948810915-20) [   x:techproducts] o.a.s.l.s.r.ManagedFeatureStore register feature based on {name=isBook, class=org.apache.solr.ltr.feature.SolrFeature, params={fq=[{!terms f=cat}book]}}
+2020-04-02 00:22:03.946 INFO  (qtp1948810915-20) [   x:techproducts] o.a.s.l.s.r.ManagedFeatureStore register feature based on {name=originalScore, class=org.apache.solr.ltr.feature.OriginalScoreFeature, params={}}
+2020-04-02 00:22:03.950 INFO  (qtp1948810915-20) [   x:techproducts] o.a.s.r.ManagedResourceStorage Saved JSON object to path _schema_feature-store.json using file:dir=/Users/devharsh/Downloads/MediCrawl/solr/example/techproducts/solr/techproducts/conf
+2020-04-02 00:22:03.950 INFO  (qtp1948810915-20) [   x:techproducts] o.a.s.r.RestManager [techproducts]  webapp=/solr path=/schema/feature-store params={} status=0 QTime=15
+2020-04-02 00:22:11.545 INFO  (qtp1948810915-26) [   x:techproducts] o.a.s.r.RestManager Found ManagedResource [org.apache.solr.ltr.store.rest.ManagedFeatureStore@45e72898] for /schema/feature-store
+2020-04-02 00:22:11.545 INFO  (qtp1948810915-26) [   x:techproducts] o.a.s.r.RestManager [techproducts]  webapp=/solr path=/schema/feature-store params={} status=0 QTime=0
+2020-04-02 00:22:13.083 INFO  (qtp1948810915-26) [   x:techproducts] o.a.s.r.RestManager Found ManagedResource [org.apache.solr.ltr.store.rest.ManagedFeatureStore@45e72898] for /schema/feature-store
+2020-04-02 00:22:13.083 INFO  (qtp1948810915-26) [   x:techproducts] o.a.s.r.RestManager [techproducts]  webapp=/solr path=/schema/feature-store params={} status=0 QTime=0
+2020-04-02 00:22:21.237 INFO  (qtp1948810915-26) [   x:techproducts] o.a.s.r.RestManager Resource not found for /schema/feature-store/_DEFAULT_, looking for parent: /schema/feature-store
+2020-04-02 00:22:21.237 INFO  (qtp1948810915-26) [   x:techproducts] o.a.s.r.RestManager Found parent resource /schema/feature-store for child: _DEFAULT_
+2020-04-02 00:22:21.237 INFO  (qtp1948810915-26) [   x:techproducts] o.a.s.r.RestManager Found ManagedResource [org.apache.solr.ltr.store.rest.ManagedFeatureStore@45e72898] for /schema/feature-store/_DEFAULT_
+2020-04-02 00:22:21.237 INFO  (qtp1948810915-26) [   x:techproducts] o.a.s.r.RestManager [techproducts]  webapp=/solr path=/schema/feature-store/_DEFAULT_ params={} status=0 QTime=1
+2020-04-02 00:23:46.419 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@21fd5faa{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-04-02 00:23:46.420 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-04-02 00:23:46.421 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=2004655561
+2020-04-02 00:23:46.422 INFO  (coreCloseExecutor-15-thread-1) [   x:techproducts] o.a.s.c.SolrCore [techproducts]  CLOSING SolrCore org.apache.solr.core.SolrCore@626fdf25
+2020-04-02 00:23:46.422 INFO  (coreCloseExecutor-15-thread-1) [   x:techproducts] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts, tag=SolrCore@626fdf25
+2020-04-02 00:23:46.423 INFO  (coreCloseExecutor-15-thread-1) [   x:techproducts] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5ace8bf6: rootName = null, domain = solr.core.techproducts, service url = null, agent id = null] for registry solr.core.techproducts / com.codahale.metrics.MetricRegistry@d54b545
+2020-04-02 00:23:46.439 INFO  (coreCloseExecutor-15-thread-1) [   x:techproducts] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-04-02 00:23:46.446 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-04-02 00:23:46.447 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2d9dff65: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@e887b4f
+2020-04-02 00:23:46.449 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-04-02 00:23:46.449 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@d109c4f: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@40915c9a
+2020-04-02 00:23:46.450 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-04-02 00:23:46.450 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3968bc60: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@1f39d6c7
+2020-04-02 00:23:46.460 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@e98770d{/solr,null,UNAVAILABLE}{/Users/devharsh/Downloads/MediCrawl/solr/server/solr-webapp/webapp}

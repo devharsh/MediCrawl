@@ -1,0 +1,32 @@
+Unable to find a $JAVA_HOME at "/usr", continuing with system-provided Java...
+Java HotSpot(TM) 64-Bit Server VM warning: -XX:+UseLargePages not supported in this VM
+2020-04-02 00:18:15.335 INFO  (main) [   ] o.e.j.u.log Logging initialized @771ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-04-02 00:18:15.494 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 14+36-1461
+2020-04-02 00:18:15.510 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/devharsh/Downloads/MediCrawl/solr/server/contexts/] at interval 0
+2020-04-02 00:18:15.729 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-04-02 00:18:15.739 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-04-02 00:18:15.739 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-04-02 00:18:15.740 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-04-02 00:18:15.808 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-04-02 00:18:15.812 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.0
+2020-04-02 00:18:15.812 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-04-02 00:18:15.812 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/devharsh/Downloads/MediCrawl/solr
+2020-04-02 00:18:15.812 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-02T00:18:15.812868Z
+Apr 02, 2020 12:20:36 AM org.restlet.Application start
+INFO: Starting org.apache.solr.rest.SolrSchemaRestApi application
+Apr 02, 2020 12:20:36 AM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2020-04-02	00:20:36	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store	-	200	-	0	20	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
+Apr 02, 2020 12:20:56 AM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2020-04-02	00:20:56	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	500	-	0	3	http://localhost:8983	curl/7.68.0	-
+Apr 02, 2020 12:21:22 AM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2020-04-02	00:21:22	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	500	-	0	1	http://localhost:8983	curl/7.68.0	-
+Apr 02, 2020 12:21:48 AM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2020-04-02	00:21:48	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store	-	200	-	0	1	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
+Apr 02, 2020 12:22:03 AM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2020-04-02	00:22:03	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	200	-	461	15	http://localhost:8983	curl/7.68.0	-
+Apr 02, 2020 12:22:11 AM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2020-04-02	00:22:11	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store	-	200	-	0	1	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
+Apr 02, 2020 12:22:13 AM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2020-04-02	00:22:13	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store	-	200	-	0	1	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
+Apr 02, 2020 12:22:21 AM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2020-04-02	00:22:21	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	1	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
