@@ -41,6 +41,106 @@ A Web Search Engine for Diseases.
 - Test model: curl -g 'http://localhost:8983/solr/nutch/query?q=breast+cancer&rq={!ltr%20model=myModel%20efi.query=breast+cancer}&fl=url,title,[features]'
 
 
+### Examples
+
+#### Plain Query: http://localhost:8983/solr/nutch/query?q=breast+cancer&fl=url,title
+```
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":0,
+    "params":{
+      "q":"breast cancer",
+      "fl":"url,title"}},
+  "response":{"numFound":1122,"start":0,"docs":[
+      {
+        "title":"Breast cancer - Symptoms and causes - Mayo Clinic",
+        "url":"https://www.mayoclinic.org/diseases-conditions/breast-cancer/symptoms-causes/syc-20352470"},
+      {
+        "title":"Breast cancer - Diagnosis and treatment - Mayo Clinic",
+        "url":"https://www.mayoclinic.org/diseases-conditions/breast-cancer/diagnosis-treatment/drc-20352475"},
+      {
+        "title":"Breast cancer - Care at Mayo Clinic - Mayo Clinic",
+        "url":"https://www.mayoclinic.org/diseases-conditions/breast-cancer/care-at-mayo-clinic/mac-20352479"},
+      {
+        "title":"Breast cancer: Symptoms, causes, and treatment",
+        "url":"https://www.medicalnewstoday.com/articles/37136"},
+      {
+        "title":"Breast Clinic - Overview - Mayo Clinic",
+        "url":"https://www.mayoclinic.org/departments-centers/breast-clinic/sections/overview/ovc-20459469"},
+      {
+        "title":"Bring Your Brave.",
+        "url":"https://bringyourbrave.tumblr.com/"},
+      {
+        "title":"Breast Cancer News from Medical News Today",
+        "url":"https://www.medicalnewstoday.com/categories/breast-cancer"},
+      {
+        "title":"Breast Cancer | CDC",
+        "url":"https://www.cdc.gov/cancer/breast/"},
+      {
+        "title":"Breast cancer - Doctors and departments - Mayo Clinic",
+        "url":"https://www.mayoclinic.org/diseases-conditions/breast-cancer/doctors-departments/ddc-20352478"},
+      {
+        "title":"Breast Cancer | Disease of the Week | CDC",
+        "url":"https://www.cdc.gov/dotw/breastcancer/index.html"}]
+  }}
+  ```
+  
+#### Features model: http://localhost:8983/solr/nutch/query?q=breast+cancer&rq={!ltr%20model=myModel%20efi.query=hello+world}&fl=url,title,[features]
+```
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":1,
+    "params":{
+      "q":"breast cancer",
+      "fl":"url,title,[features]",
+      "rq":"{!ltr model=myModel efi.query=hello world}"}},
+  "response":{"numFound":1122,"start":0,"docs":[
+      {
+        "title":"Science Clips - Volume 12, Issue 10, March 23, 2020",
+        "url":"https://www.cdc.gov/library/sciclips/issues/index.html",
+        "[features]":"originalScore=2.2009563,titleLength=9.0,contentLength=22552.0"},
+      {
+        "title":"Science Clips - Volume 12, Issue 10, March 23, 2020",
+        "url":"https://www.cdc.gov/library/sciclips/issues/",
+        "[features]":"originalScore=2.2009563,titleLength=9.0,contentLength=22552.0"},
+      {
+        "title":"Breast cancer - Diagnosis and treatment - Mayo Clinic",
+        "url":"https://www.mayoclinic.org/diseases-conditions/breast-cancer/diagnosis-treatment/drc-20352475",
+        "[features]":"originalScore=3.6039774,titleLength=7.0,contentLength=5144.0"},
+      {
+        "title":"The Topic Is Cancer | Blogs | CDC",
+        "url":"https://blogs.cdc.gov/cancer/",
+        "[features]":"originalScore=3.3617,titleLength=6.0,contentLength=5144.0"},
+      {
+        "title":"All Issues - Mayo Clinic Health Letter",
+        "url":"https://healthletter.mayoclinic.com/issues",
+        "[features]":"originalScore=2.955464,titleLength=6.0,contentLength=5144.0"},
+      {
+        "title":"Menopause Treatment, Signs, Symptoms & Age",
+        "url":"https://www.medicinenet.com/menopause/article.htm",
+        "[features]":"originalScore=2.5527363,titleLength=5.0,contentLength=5144.0"},
+      {
+        "title":"Hormone Therapy for Women: Side Effects, Cancer Risks",
+        "url":"https://www.medicinenet.com/hormone_therapy/article.htm",
+        "[features]":"originalScore=3.1924405,titleLength=8.0,contentLength=4632.0"},
+      {
+        "title":"Cáncer de mama - Atención en Mayo Clinic - Mayo Clinic",
+        "url":"https://www.mayoclinic.org/es-es/diseases-conditions/breast-cancer/care-at-mayo-clinic/mac-20352479",
+        "[features]":"originalScore=3.472774,titleLength=9.0,contentLength=4120.0"},
+      {
+        "title":"Hot Flashes Causes, Symptoms & Treatment Medicine for Men & Women",
+        "url":"https://www.medicinenet.com/hot_flashes/article.htm",
+        "[features]":"originalScore=2.7366023,titleLength=9.0,contentLength=3864.0"},
+      {
+        "title":"Breast cancer - Care at Mayo Clinic - Mayo Clinic",
+        "url":"https://www.mayoclinic.org/diseases-conditions/breast-cancer/care-at-mayo-clinic/mac-20352479",
+        "[features]":"originalScore=3.6035175,titleLength=8.0,contentLength=3608.0"}]
+  }}
+```
+
+
 ### Commonly searched diseases
 1. Diabetes
 2. Depression
