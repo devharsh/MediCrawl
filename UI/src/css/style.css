@@ -2,11 +2,12 @@ body{
     margin: 0;
     padding: 0;
     background: skyblue;
+    align-items: center;
 }
 
 h1{
     font-size:49px;
-    text-align: center;
+    text-align: justify;
     color: #007691;
 }
 
@@ -20,10 +21,10 @@ label{
 
 .search-box{
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: skyblue;
     height: 50px;
     border-radius: 50px;
     padding: 10px;
@@ -63,4 +64,23 @@ label{
     transition: 0.4s;
     line-height: 40px;
     width: 0px;
+}
+
+#left{
+    width: 30%; 
+    height: 100%; 
+    position: fixed; 
+    margin: 20px; 
+    margin-left: 10px;
+}
+
+#results{
+    top: 35%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background: skyblue;
+    height: 50px;
+    border-radius: 50px;
+    padding: 10px;
+    align-content: center;
 }
