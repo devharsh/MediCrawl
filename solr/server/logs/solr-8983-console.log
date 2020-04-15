@@ -1,88 +1,12 @@
-Unable to find a $JAVA_HOME at "/usr", continuing with system-provided Java...
-Java HotSpot(TM) 64-Bit Server VM warning: -XX:+UseLargePages not supported in this VM
-2020-04-02 00:24:03.317 INFO  (main) [   ] o.e.j.u.log Logging initialized @825ms to org.eclipse.jetty.util.log.Slf4jLog
-2020-04-02 00:24:03.483 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 14+36-1461
-2020-04-02 00:24:03.501 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/devharsh/Downloads/MediCrawl/solr/server/contexts/] at interval 0
-2020-04-02 00:24:03.740 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2020-04-02 00:24:03.748 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2020-04-02 00:24:03.748 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2020-04-02 00:24:03.750 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2020-04-02 00:24:03.818 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2020-04-02 00:24:03.822 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solrâ„¢ version 8.5.0
-2020-04-02 00:24:03.822 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2020-04-02 00:24:03.822 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/devharsh/Downloads/MediCrawl/solr
-2020-04-02 00:24:03.823 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-02T00:24:03.823210Z
-Apr 02, 2020 12:26:11 AM org.restlet.Application start
-INFO: Starting org.apache.solr.rest.SolrSchemaRestApi application
-Apr 02, 2020 12:26:11 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:26:11	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	500	-	0	21	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 12:27:23 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:27:23	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	500	-	1574	4	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 12:28:01 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:28:01	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store	-	200	-	0	2	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
-Apr 02, 2020 12:28:03 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:28:03	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store	-	200	-	0	0	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
-Apr 02, 2020 12:29:01 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:29:01	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	500	-	1574	3	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 12:37:11 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:37:11	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	500	-	1382	2	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 12:37:51 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:37:51	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	200	-	461	13	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 12:38:19 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:38:19	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store	-	200	-	0	0	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
-Apr 02, 2020 12:38:24 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:38:24	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	1	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
-Apr 02, 2020 12:40:17 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:40:17	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	500	-	461	1	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 12:41:00 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:41:00	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	500	-	461	1	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 12:41:58 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:41:58	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	DELETE	/solr/schema/feature-store	-	403	-	0	0	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 12:42:09 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:42:09	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	DELETE	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	2	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 12:49:45 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:49:45	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	1	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
-Apr 02, 2020 12:49:49 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:49:49	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store	-	200	-	0	0	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
-Apr 02, 2020 12:49:51 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:49:51	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store	-	200	-	0	0	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
-Apr 02, 2020 12:49:57 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:49:57	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	0	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
-Apr 02, 2020 12:50:00 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:50:00	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	200	-	1254	6	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 12:50:03 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	00:50:03	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	1	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
-Apr 02, 2020 2:14:48 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:14:48	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	1	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
-Apr 02, 2020 2:24:42 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:24:42	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	DELETE	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	2	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 2:26:44 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:26:44	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	200	-	919	3	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 2:27:38 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:27:38	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store	-	200	-	0	0	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
-Apr 02, 2020 2:27:44 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:27:44	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	1	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
-Apr 02, 2020 2:31:28 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:31:28	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	DELETE	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	1	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 2:32:15 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:32:15	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	200	-	763	2	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 2:34:41 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:34:41	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	DELETE	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	1	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 2:34:55 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:34:55	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	200	-	603	2	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 2:35:17 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:35:17	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	DELETE	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	1	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 2:37:14 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:37:14	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	DELETE	/solr/schema/feature-store/_DEFAULT_	-	200	-	0	1	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 2:37:18 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:37:18	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/feature-store	-	200	-	422	1	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 2:43:29 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	02:43:29	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/model-store	-	400	-	321	6	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 3:00:49 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	03:00:49	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/model-store	-	400	-	321	2	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 3:01:43 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	03:01:43	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/model-store	-	400	-	321	2	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 3:04:59 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	03:04:59	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	PUT	/solr/schema/model-store	-	200	-	327	5	http://localhost:8983	curl/7.68.0	-
-Apr 02, 2020 3:05:58 AM org.restlet.engine.log.LogFilter afterHandle
-INFO: 2020-04-02	03:05:58	0:0:0:0:0:0:0:1	-	0:0:0:0:0:0:0:1	8983	GET	/solr/schema/model-store	-	200	-	0	0	http://localhost:8983	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36	-
+2020-04-15 01:10:40.652 INFO  (main) [   ] o.e.j.u.log Logging initialized @35943ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-04-15 01:10:43.989 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 12.0.2+10
+2020-04-15 01:10:44.452 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/vaish/Documents/Projects/Projects/CS609_MediCrawl/solr/server/contexts/] at interval 0
+2020-04-15 01:10:54.481 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-04-15 01:10:54.602 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-04-15 01:10:54.602 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-04-15 01:10:54.641 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-04-15 01:10:55.319 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-04-15 01:10:55.352 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.0
+2020-04-15 01:10:55.353 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-04-15 01:10:55.354 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr
+2020-04-15 01:10:55.355 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-15T01:10:55.355054400Z
