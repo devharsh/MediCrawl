@@ -22,8 +22,7 @@ label{
 .search-box{
     position: absolute;
     top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 35%;
     background: skyblue;
     height: 50px;
     border-radius: 50px;
@@ -41,7 +40,6 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.4s;
 }
 
 .search-box:hover > .search-txt{
@@ -76,8 +74,7 @@ label{
 
 #results{
     top: 35%;
-    left: 60%;
-    transform: translate(-50%, -50%);
+    left: 30%;
     background: skyblue;
     height: 50px;
     border-radius: 50px;

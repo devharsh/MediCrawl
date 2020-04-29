@@ -1,12 +1,12 @@
-2020-04-15 01:10:40.652 INFO  (main) [   ] o.e.j.u.log Logging initialized @35943ms to org.eclipse.jetty.util.log.Slf4jLog
-2020-04-15 01:10:43.989 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 12.0.2+10
-2020-04-15 01:10:44.452 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/vaish/Documents/Projects/Projects/CS609_MediCrawl/solr/server/contexts/] at interval 0
-2020-04-15 01:10:54.481 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2020-04-15 01:10:54.602 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2020-04-15 01:10:54.602 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2020-04-15 01:10:54.641 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2020-04-15 01:10:55.319 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2020-04-15 01:10:55.352 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.0
-2020-04-15 01:10:55.353 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2020-04-15 01:10:55.354 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr
-2020-04-15 01:10:55.355 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-15T01:10:55.355054400Z
+2020-04-29 05:57:20.868 INFO  (main) [   ] o.e.j.u.log Logging initialized @5688ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-04-29 05:57:21.408 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 12.0.2+10
+2020-04-29 05:57:21.469 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/vaish/Documents/Projects/Projects/CS609_MediCrawl/solr/server/contexts/] at interval 0
+2020-04-29 05:57:23.133 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-04-29 05:57:23.155 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-04-29 05:57:23.155 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-04-29 05:57:23.162 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-04-29 05:57:23.295 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-04-29 05:57:23.304 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.0
+2020-04-29 05:57:23.304 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-04-29 05:57:23.304 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr
+2020-04-29 05:57:23.305 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-29T05:57:23.305083800Z

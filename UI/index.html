@@ -12,22 +12,15 @@
         
             <label>Find about diseases...</label>
             <input class = "search-txt" type="text" id="searchterm" name="searchengine" placeholder="Type Ex: Sinus, PCOD,.." />
-            <button class="search-btn"  id="search">
-                <i class='fas fa-search'></i>
+            <button class="search-btn"  id="search" >
+                Know more!
             </button>
         </div>
 
-        <div class="loader">
-            <div class="progress">
-                <div class="indeterminate">
-
-                </div>
-            </div>
-        </div>
-
+        
         <div class="search-box" id="results">
         </div>
-
+        
         <script>
             $("#searchterm").keyup(function(e){
               var q = $("#searchterm").val();
@@ -46,19 +39,52 @@
                 });
               });
             });
+            
+            $(document).ready(function () {
+                $('#search').click(function () {
+                    var q = $("#searchterm").val();
+                    var showData = $('#results');
+
+                    $.getJSON('http://localhost:8983/solr/nutch/select?fl=url,title&q=' + q, 
+                    function (data) {
+                    console.log(data.response.docs);
+                    var textedJson = JSON.stringify(data.response.docs, undefined, 4);
+                    var obj = JSON.parse(textedJson);
+                    
+                    showData.empty();
+
+                        function printValues(obj) {
+                            for(var k in obj) {
+                                if(obj[k] instanceof Object) {
+                                    printValues(obj[k]);
+                                } else {
+                                    var content = '<li>' + obj[k] + '</li>';
+                                    var list = $('<ul />').html(content);
+                                    showData.append(list);
+                                };
+                            }
+                        };
+                    
+                    var data = printValues(obj);
+                    showData.append(data);
+
+                    });
+
+                    showData.text('Loading the JSON file.');
+                });
+            });
         </script>
 
         <div id="left">
-            <!-- start sw-rss-feed code -->
+             
             <script type="text/javascript" src="./src/js/feeds.js"></script>
             <script type="text/javascript" src="https://feed.surfing-waves.com/js/rss-feed.js"></script>
-            <!-- end sw-rss-feed code -->
+             
         </div>
 
         <script src= "./src/js/jquery.min.js"></script>
         <script src="https://cdnjs.cloudfare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="./src/js/diseaseapi.js"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        
         
     </body>
 </html>
