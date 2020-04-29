@@ -1,66 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <title>Medi Crawl</title>
+    </head>
+    <body>
+        <div class = "search-box">
+            <h1>Medi Crawl</h1>
+        
+            <label>Find about diseases...</label>
+            <input class = "search-txt" type="text" id="searchterm" name="searchengine" placeholder="Type Ex: Sinus, PCOD,.." />
+            <button class="search-btn"  id="search" >
+                Know more!
+            </button>
+        </div>
 
-<head>
-	<title>Medi Crawl</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="./src/css/materialize.min.css">
-	<style type="text/css">
-		#loader {
-			height: 100vh;
-			align-items: center;
-			display: flex;
-			justify-content: center;
-		}
+        
+        <div class="search-box" id="results">
+        </div>
+        
+        <script>
+            $("#searchterm").keyup(function(e){
+              var q = $("#searchterm").val();
+              $.getJSON("http://en.wikipedia.org/w/api.php?callback=?",
+              {
+                srsearch: q,
+                action: "query",
+                list: "search",
+                format: "json"
+              },
+              function(data) {
+                $("#results").empty();
+                $("#results").append("<p><b>" + q + "</b></p>");
+                $.each(data.query.search, function(i,item){
+                  $("#results").append("<div><a href='http://en.wikipedia.org/wiki/" + encodeURIComponent(item.title) + "'>" + item.title + "</a><br>" + item.snippet + "<br><br></div>");
+                });
+              });
+            });
+            
+            $(document).ready(function () {
+                $('#search').click(function () {
+                    var q = $("#searchterm").val();
+                    var showData = $('#results');
 
-		.progress {
-			display: none;
-		}
+                    $.getJSON('http://localhost:8983/solr/nutch/select?fl=url,title&q=' + q, 
+                    function (data) {
+                    console.log(data.response.docs);
+                    var textedJson = JSON.stringify(data.response.docs, undefined, 4);
+                    var obj = JSON.parse(textedJson);
+                    
+                    showData.empty();
 
-		.errorMsg {
-			font-size: 34px;
-			height: 100vh;
-			align-items: center;
-			display: flex;
-			justify-content: center;
-		}
-	</style>
-</head>
+                        function printValues(obj) {
+                            for(var k in obj) {
+                                if(obj[k] instanceof Object) {
+                                    printValues(obj[k]);
+                                } else {
+                                    var content = '<li>' + obj[k] + '</li>';
+                                    var list = $('<ul />').html(content);
+                                    showData.append(list);
+                                };
+                            }
+                        };
+                    
+                    var data = printValues(obj);
+                    showData.append(data);
 
-<body>
-	<div class="navbar-fixed">
-		<nav class="teal">
-			<div class="nav-wrapper">
-				<div class="container">
-					<a href="#" class="brand-logo">News Api</a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li class="active"><a href="index.html">News</a></li>
-						<li><a href="about.html">About us</a></li>
-						<li><a href="contact.html">Contact us</a></li>
-					</ul>
-				</div>
+                    });
 
-			</div>
-		</nav>
-	</div>
+                    showData.text('Loading the JSON file.');
+                });
+            });
+        </script>
 
+        <div id="left">
+             
+            <script type="text/javascript" src="./src/js/feeds.js"></script>
+            <script type="text/javascript" src="https://feed.surfing-waves.com/js/rss-feed.js"></script>
+             
+        </div>
 
-	<div class="container">
-		<!-- <h4>Please Access the <b>app.js</b> and replace that fake Api key with your own api key.</h4> -->
-		<div class="row">
-			<div id="newsResults"></div>
-		</div>
-
-		<div id="loader">
-			<div class="progress">
-				<div class="indeterminate"></div>
-			</div>
-		</div>
-
-	</div>
-
-	<script src="./src/js/jquery-3.3.1.min.js"></script>
-	<script src="./src/js/materialize.min.js"></script>
-	<script src="app.js"></script>
-</body>
+        <script src= "./src/js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudfare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        
+    </body>
 </html>

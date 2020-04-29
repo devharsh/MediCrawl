@@ -20,6 +20,8 @@ A Web Search Engine for Diseases.
 
 
 ## Procedure
+To launch the preconfigured setup just run this command: __solr/bin/solr start -Dsolr.ltr.enabled=true__ or you can download Nutch and Solr manually and perform the following operations:
+
 - Download and extract Nutch and Solr in nutch and solr directories
 - Modify nutch/conf/nutch-site.xml: set http.agent.name and indexr-solr property
 - Modify nutch/conf/schema.xml
@@ -27,7 +29,7 @@ A Web Search Engine for Diseases.
 - cp -r solr/server/solr/configsets/_default solr/server/solr/configsets/nutch
 - cp nutch/conf/schema.xml solr/server/solr/configsets/nutch/conf
 - rm solr/server/solr/configsets/nutch/conf/managed-schema
-- Modify solr/server/solr/configsets/nutch/conf/solrconfig.xml to enable LTR and change _text_ to text
+- Modify solr/server/solr/configsets/nutch/conf/solrconfig.xml to enable LTR and change \_text\_ to text
 - start solr with LTR: solr/bin/solr start -Dsolr.ltr.enabled=true
 - set JAVA_HOME environment variable
 - Crawl and Index simultaneously: nutch/bin/crawl -i -D solr.server.url=http://localhost:8983/solr/nutch -s nutch/urls/ Crawl 3
