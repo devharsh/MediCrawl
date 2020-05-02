@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./src/css/style.css">
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <title>Medi Crawl</title>
@@ -86,7 +87,7 @@
                                         if(obj[k] instanceof Object) {
                                             printValues(obj[k]);
                                         } else {
-                                            var content = '<li>' + obj[k] + '</li>';
+                                            var content = '<li><a href="' + obj[k] + '" target=_blank>' + obj[k] + '</a></li>';
                                             var list = $('<ul />').html(content);
                                             showData.append(list);
                                         };

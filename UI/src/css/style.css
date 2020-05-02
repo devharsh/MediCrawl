@@ -7,12 +7,13 @@ body{
 h1{
     font-size:49px;
     text-align: justify;
-    color: #007691;
+    color: rgb(33, 127, 235);
 }
 
 label{
     font-weight: bold;
-    
+    text-align: justify;
+    color: rgb(33, 127, 235);
 }
 
 .search-box{
@@ -92,7 +93,7 @@ p{
 
 .tab-content{
     display: none;
-    background: #ededed;
+    background: rgb(33, 127, 235);
     padding: 15px;
 }
 
@@ -107,21 +108,21 @@ ul.tabs{
 }
 
 ul.tabs li{
-    background: none;
-    color: #222;
+    background: lightgray;
+    color: black;
     display: inline-block;
     padding: 10px 15px;
     cursor: pointer;
 }
 
 ul.tabs li.current{
-    background: #ededed;
-    color: #222;
+    background: rgb(33, 127, 235);
+    color: white;
 }
 
 .tab-content{
     display: none;
-    background: #ededed;
+    background: white;
     padding: 15px;
 }
 
@@ -129,3 +130,8 @@ ul.tabs li.current{
     display: inherit;
     text-decoration: solid;
 }
+
+@-ms-viewport{
+    width: device-width;
+}
+  
