@@ -17,6 +17,4 @@ https://www.webmd.com/
 https://www.adam.com/
 https://www.medicalnewstoday.com/
 https://www.cdc.gov/diseasesconditions/index.html
-https://en.wikipedia.org/wiki/List_of_medical_symptoms
 https://www.health.harvard.edu/
-http://www.madisonsfoundation.org/
