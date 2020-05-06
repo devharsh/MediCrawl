@@ -1,137 +1,140 @@
-body{
-    margin: 0;
-    padding: 0;
-    align-items: center;
+body {
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
-h1{
-    font-size:49px;
-    text-align: justify;
-    color: rgb(33, 127, 235);
+h1 {
+  font-size: 49px;
+  text-align: justify;
+  color: rgb(33, 127, 235);
 }
 
-label{
-    font-weight: bold;
-    text-align: justify;
-    color: rgb(33, 127, 235);
+label {
+  font-weight: bold;
+  text-align: justify;
+  color: rgb(33, 127, 235);
 }
 
-.search-box{
-    position: absolute;
-    top: 4%;
-    left: 32%;
-    height: 50px;
-    border-radius: 50px;
-    padding: 10px;
-    align-content: center;
+.search-box {
+  position: absolute;
+  top: 4%;
+  left: 32%;
+  height: 50px;
+  border-radius: 50px;
+  padding: 10px;
+  align-content: center;
 }
 
-.search-btn{
-    color: black;
-    float: right;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: White;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.search-btn {
+  color: black;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: White;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.search-txt{
-    border: 1px;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 6px;
-    color: black;
-    font-size: 16px;
-    width: 240px;
-    line-height: 40px;
+.search-txt {
+  border: 1px;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 6px;
+  color: black;
+  font-size: 16px;
+  width: 240px;
+  line-height: 40px;
 }
 
-#left{
-    width: 30%; 
-    height: 100%; 
-    position: fixed; 
-    margin: 20px; 
-    margin-left: 11px;
+#left {
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  margin: 20px;
+  margin-left: 11px;
 }
 
-#results{
-    top: 30%;
-    left: 5%;
-    height: 50px;
-    border-radius: 50px;
-    padding: 10px;
-    align-content: center;
-    background-color: white;
+#results {
+  top: 30%;
+  left: 5%;
+  height: 50px;
+  border-radius: 50px;
+  padding: 10px;
+  align-content: center;
+  background-color: white;
 }
 
-
-#main{
-    width:600px; 
-    margin:0 auto; 
-    margin-top:60px;
+#main {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 60px;
 }
 
-form, input, p{
-    padding:0; 
-    margin:0; 
-    border:0;
+form,
+input,
+p {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-p{
-    padding:6px 0 20px 0;
+p {
+  padding: 6px 0 20px 0;
 }
 
-.container{
-    width: 800px;
-    margin: auto;
+.container {
+  width: 800px;
+  margin: auto;
 }
 
-
-.tab-content{
-    display: none;
-    background: rgb(33, 127, 235);
-    padding: 15px;
+.tab-content {
+  display: none;
+  background: rgb(33, 127, 235);
+  padding: 15px;
 }
 
-.tab-content.current{
-    display: inherit;
+.tab-content.current {
+  display: inherit;
 }
 
-ul.tabs{
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
-ul.tabs li{
-    background: lightgray;
-    color: black;
-    display: inline-block;
-    padding: 10px 15px;
-    cursor: pointer;
+ul.tabs li {
+  background: lightgray;
+  color: black;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
-ul.tabs li.current{
-    background: rgb(33, 127, 235);
-    color: white;
+ul.tabs li.current {
+  background: rgb(33, 127, 235);
+  color: white;
 }
 
-.tab-content{
-    display: none;
-    background: white;
-    padding: 15px;
+.tab-content {
+  display: none;
+  background: white;
+  padding: 15px;
 }
 
-.tab-content.current{
-    display: inherit;
-    text-decoration: solid;
+.tab-content.current {
+  display: inherit;
+  text-decoration: solid;
 }
 
-@-ms-viewport{
-    width: device-width;
+@-ms-viewport {
+  width: device-width;
 }
-  
+
+.v {
+  font-weight: bold;
+}

@@ -1,170 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./src/css/style.css">
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <title>Medi Crawl</title>
-    </head>
-    <body>
-        <div class = "search-box">
-            <h1>Medi Crawl</h1>
-        
-            <label for="searchterm">Find about diseases...</label>
-            <input class = "search-txt" type="text" id="searchterm" name="searchengine" placeholder="Type Ex: Sinus, PCOD,.." />
-            <!-- <button class="search-btn"  id="search" >
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>Medi Crawl</title>
+  </head>
+  <body>
+    <div class="search-box">
+      <h1>Medi Crawl</h1>
+
+      <label for="searchterm">Find about diseases...</label>
+      <input
+        class="search-txt"
+        type="text"
+        id="searchterm"
+        name="searchengine"
+        placeholder="Type Ex: Sinus, PCOD,.."
+      />
+      <!-- <button class="search-btn"  id="search" >
                 GO!
             </button> -->
-            <br/>
-            <div class="container">
-                <ul class="tabs">
-                    <li class="tab-link current" data-tab="tab-1" id="tab1">Wikipedia</li>
-                    <li class="tab-link" data-tab="tab-2" id="tab2">Medi Crawl</li>
-                </ul>
-            </div>
-        
-        </div>
-        
-        <div class="search-box" id="results">
-            <div id="tab-1" class="tab-content current">
-                <script>
-                    //$("#searchterm").keyup(function(e){
-                    $("#tab1").click(function(e){
-                        var tab_id = $(this).attr('data-tab');
+      <br />
+      <div class="container">
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-1" id="tab1">Wikipedia</li>
+          <li class="tab-link" data-tab="tab-2" id="tab2">Medi Crawl</li>
+        </ul>
+      </div>
+    </div>
 
-                        $('ul.tabs li').removeClass('current');
-                        $('.tab-content').removeClass('current');
+    <div class="search-box" id="results">
+      <div id="tab-1" class="tab-content current">
+        <script>
+          //$("#searchterm").keyup(function(e){
+          $("#tab1").click(function (e) {
+            var tab_id = $(this).attr("data-tab");
 
-                        $(this).addClass('current');
-                        $("#"+tab_id).addClass('current');
-                        
-                        var q = $("#searchterm").val();
-                            $.getJSON("http://en.wikipedia.org/w/api.php?callback=?",
-                            {
-                                srsearch: q,
-                                srlimit: 20,
-                                action: "query",
-                                list: "search",
-                                format: "json"
-                            },
-                            function(data) {
-                                $("#results").empty();
-                                $("#results").append("<p><b>" + q + "</b></p>");
-                                $.each(data.query.search, function(i,item){
-                                $("#results").append("<div><a href='http://en.wikipedia.org/wiki/" + encodeURIComponent(item.title) + "'>" + item.title + "</a><br>" + item.snippet + "<br><br></div>");
-                                });
-                            });
-                        });
-                </script>
-            </div>
+            $("ul.tabs li").removeClass("current");
+            $(".tab-content").removeClass("current");
 
-            <div id="tab-2" class="tab-content">
-                <script>
-                    $(document).ready(function () {
-                        $('#tab2').click(function () {
-                            var tab_id = $(this).attr('data-tab');
+            $(this).addClass("current");
+            $("#" + tab_id).addClass("current");
 
-                            $('ul.tabs li').removeClass('current');
-                            $('.tab-content').removeClass('current');
+            var q = $("#searchterm").val();
+            $.getJSON(
+              "http://en.wikipedia.org/w/api.php?callback=?",
+              {
+                srsearch: q,
+                srlimit: 20,
+                action: "query",
+                list: "search",
+                format: "json",
+              },
+              function (data) {
+                $("#results").empty();
+                $("#results").append("<p><b>" + q + "</b></p>");
+                $.each(data.query.search, function (i, item) {
+                  $("#results").append(
+                    "<div><a href='http://en.wikipedia.org/wiki/" +
+                      encodeURIComponent(item.title) +
+                      "'>" +
+                      item.title +
+                      "</a><br>" +
+                      item.snippet +
+                      "<br><br></div>"
+                  );
+                });
+              }
+            );
+          });
+        </script>
+      </div>
 
-                            $(this).addClass('current');
-                            $("#"+tab_id).addClass('current');
-                            
-                            var q = $("#searchterm").val();
-                            var showData = $('#results');
+      <div id="tab-2" class="tab-content">
+        <script>
+          $(document).ready(function () {
+            $("#tab2").click(function () {
+              var tab_id = $(this).attr("data-tab");
 
-                            $.getJSON('http://localhost:8983/solr/nutch/select?fl=url,title&q=' + q, 
-                            function (data) {
-                            console.log(data.response.docs);
-                            var textedJson = JSON.stringify(data.response.docs, undefined, 4);
-                            var obj = JSON.parse(textedJson);
-                            
-                            showData.empty();
+              $("ul.tabs li").removeClass("current");
+              $(".tab-content").removeClass("current");
 
-                                function printValues(obj) {
-                                    for(var k in obj) {
-                                        if(obj[k] instanceof Object) {
-                                            printValues(obj[k]);
-                                        } else {
-                                            var content = '<li><a href="' + obj[k] + '" target=_blank>' + obj[k] + '</a></li>';
-                                            var list = $('<ul />').html(content);
-                                            showData.append(list);
-                                        };
-                                    }
-                                };
-                            
-                            var data = printValues(obj);
-                            showData.append(data);
+              $(this).addClass("current");
+              $("#" + tab_id).addClass("current");
 
-                            });
+              var q = $("#searchterm").val();
+              var showData = $("#results");
 
-                            showData.text('Loading the JSON file.');
-                        });
-                    });
-                </script>
-            </div>
-        </div>
-        
+              $.getJSON(
+                "http://localhost:8983/solr/nutch/select?fl=url,title,content&q=" +
+                  q,
+                function (data) {
+                  console.log(data.response.docs);
+                  var textedJson = JSON.stringify(
+                    data.response.docs,
+                    undefined,
+                    4
+                  );
+                  var obj = JSON.parse(textedJson);
+                  console.log(obj);
 
-        <div id="left">
-            <br/>
-            <br/>
-            <!-- <input type="radio" id="show" value="Show News" name="News">
+                  showData.empty();
+
+                  function printValues(obj) {
+                    for (var k in obj) {
+                      if (obj[k] instanceof Object) {
+                        var content =
+                          "<li><b>" +
+                          obj[k].title +
+                          '</b><br/> <a href="' +
+                          obj[k].url +
+                          '" target=_blank>' +
+                          obj[k].url +
+                          "</a></li>";
+                        var list = $("<ul />").html(content);
+                        showData.append(list);
+                        printValues(obj[k]);
+                      }
+                    }
+                  }
+
+                  var data = printValues(obj);
+                  showData.append(data);
+                }
+              );
+
+              showData.text("Loading the JSON file.");
+            });
+          });
+        </script>
+      </div>
+    </div>
+
+    <div id="left">
+      <br />
+      <br />
+      <!-- <input type="radio" id="show" value="Show News" name="News">
             <label for="show">Show News</label><br>
             <input type="radio" id="hide" value="Hide News" name="News" checked>
             <label for="hide">Hide News</label><br>  -->
-            <!-- <script type="text/javascript" src="./src/js/feeds.js"></script> -->
-            <script>
-                
-                var rssfeed_url = new Array();
-                        rssfeed_url[0]="http://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC"; rssfeed_url[1]="https://www.health.harvard.edu/blog/feed"; rssfeed_url[2]="https://www.nytimes.com/svc/collections/v1/publish/http://www.nytimes.com/section/health/rss.xml";
-                        rssfeed_frame_width="400"; 
-                        rssfeed_frame_height="750"; 
-                        rssfeed_scroll="on"; 
-                        rssfeed_scroll_step="6"; 
-                        rssfeed_scroll_bar="off"; 
-                        rssfeed_target="_blank"; 
-                        rssfeed_font_size="12"; 
-                        rssfeed_font_face=""; 
-                        rssfeed_border="on"; 
-                        rssfeed_css_url=""; 
-                        rssfeed_title="on"; 
-                        rssfeed_title_name="Latest Health News"; 
-                        rssfeed_title_bgcolor="#007691"; 
-                        rssfeed_title_color="#fff"; 
-                        rssfeed_title_bgimage=""; 
-                        rssfeed_footer="off"; 
-                        rssfeed_footer_name="rss feed"; 
-                        rssfeed_footer_bgcolor="#fff"; 
-                        rssfeed_footer_color="#333"; 
-                        rssfeed_footer_bgimage=""; 
-                        rssfeed_item_title_length="50"; 
-                        rssfeed_item_title_color="#007691"; 
-                        rssfeed_item_bgcolor="#fff"; 
-                        rssfeed_item_bgimage=""; 
-                        rssfeed_item_border_bottom="off"; 
-                        rssfeed_item_source_icon="off"; 
-                        rssfeed_item_date="off"; 
-                        rssfeed_item_description="on"; 
-                        rssfeed_item_description_length="120"; 
-                        rssfeed_item_description_color="#666"; 
-                        rssfeed_item_description_link_color="#333"; 
-                        rssfeed_item_description_tag="off"; 
-                        rssfeed_no_items="0";
-                        rssfeed_cache = "f4c7e541fd33954c58ee6df88852e4be";
-                        $(rssfeed_url).show();
+      <!-- <script type="text/javascript" src="./src/js/feeds.js"></script> -->
+      <script>
+        var rssfeed_url = new Array();
+        rssfeed_url[0] =
+          "http://rssfeeds.webmd.com/rss/rss.aspx?RSSSource=RSS_PUBLIC";
+        rssfeed_url[1] = "https://www.health.harvard.edu/blog/feed";
+        rssfeed_url[2] =
+          "https://www.nytimes.com/svc/collections/v1/publish/http://www.nytimes.com/section/health/rss.xml";
+        rssfeed_frame_width = "400";
+        rssfeed_frame_height = "750";
+        rssfeed_scroll = "on";
+        rssfeed_scroll_step = "6";
+        rssfeed_scroll_bar = "off";
+        rssfeed_target = "_blank";
+        rssfeed_font_size = "12";
+        rssfeed_font_face = "";
+        rssfeed_border = "on";
+        rssfeed_css_url = "";
+        rssfeed_title = "on";
+        rssfeed_title_name = "Latest Health News";
+        rssfeed_title_bgcolor = "#007691";
+        rssfeed_title_color = "#fff";
+        rssfeed_title_bgimage = "";
+        rssfeed_footer = "off";
+        rssfeed_footer_name = "rss feed";
+        rssfeed_footer_bgcolor = "#fff";
+        rssfeed_footer_color = "#333";
+        rssfeed_footer_bgimage = "";
+        rssfeed_item_title_length = "50";
+        rssfeed_item_title_color = "#007691";
+        rssfeed_item_bgcolor = "#fff";
+        rssfeed_item_bgimage = "";
+        rssfeed_item_border_bottom = "off";
+        rssfeed_item_source_icon = "off";
+        rssfeed_item_date = "off";
+        rssfeed_item_description = "on";
+        rssfeed_item_description_length = "120";
+        rssfeed_item_description_color = "#666";
+        rssfeed_item_description_link_color = "#333";
+        rssfeed_item_description_tag = "off";
+        rssfeed_no_items = "0";
+        rssfeed_cache = "f4c7e541fd33954c58ee6df88852e4be";
+        $(rssfeed_url).show();
+      </script>
+      <!-- <script
+        type="text/javascript"
+        src="https://feed.surfing-waves.com/js/rss-feed.js"
+      ></script> -->
+    </div>
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=010408300575028600841:m1xbmebqfvn"
+    ></script>
+    <div class="gcse-search"></div>
 
-            </script>
-            <!-- <script type="text/javascript" src="https://feed.surfing-waves.com/js/rss-feed.js"></script> -->
-             
-        </div>
-        <script async src="https://cse.google.com/cse.js?cx=010408300575028600841:m1xbmebqfvn"></script>
-            <div class="gcse-search"></div  >
-
-        <script src= "./src/js/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudfare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        
-        
-    </body>
+    <script src="./src/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudfare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
 </html>
