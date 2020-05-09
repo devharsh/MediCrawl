@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript - read JSON from URL</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+<p id="user"></p>
+
+<script>
+function getJSON(url) {
+        var resp ;
+        var xmlHttp ;
+
+        resp  = '' ;
+        xmlHttp = new XMLHttpRequest();
+
+        if(xmlHttp != null)
+        {
+            xmlHttp.open( "GET", url, false );
+            xmlHttp.send( null );
+            resp = xmlHttp.responseText;
+        }
+
+        return resp ;
+    }
+    
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+fetch( 'http://localhost:8983/solr/nutch/query?fl=title,url&rows=20&q=cold', {
+	method: 'get'
+}).then( function( response ) {
+	var fl = getParameterByName('fl');
+
+	var s = '{"first_name" : "Sammy", "last_name" : "Shark", "location" : "Ocean"}';
+
+	var obj = JSON.parse(s);
+
+}).catch( function( err ) {
+	// Error
+});
+
+var gtjsn = getJSON('http://localhost:8983/solr/nutch/query?fl=title,url&rows=20&q=cold');
+
+document.getElementById("user").innerHTML =
+"Name: " + obj.first_name + " " + obj.last_name + "<br>" +
+"Location: " + obj.location + gtjsn;
+
+</script>
+
+</body>
+</html>
