@@ -3,7 +3,6 @@ A Web Search Engine for Diseases.
 
 
 ## Prerequisites
-- Python: https://www.anaconda.com/distribution/#download-section
 - Git: https://git-scm.com/
 - Git-LFS: https://com.puter.tips/2020/04/install-git-lfs-in-macos.html
 - Solr: https://lucene.apache.org/solr/downloads.html
@@ -16,7 +15,7 @@ A Web Search Engine for Diseases.
 | Crawling | Web crawler | Nutch |
 | Indexing | Database | Solr |
 | Ranking | Database | Solr |
-| Searching | User interface | Node.js |
+| Searching | User interface | HTML / JS / CSS |
 
 
 ## Procedure
@@ -291,29 +290,6 @@ To launch the preconfigured setup just run this command: __solr/bin/solr start -
         "url":"https://www.medicalnewstoday.com/articles/320120"}]
   }}
 ```
-
-
-### Commonly searched diseases
-1. Diabetes
-2. Depression
-3. Anxiety
-4. Hemorrhoid
-5. Yeast infection
-6. Lupus
-7. Shingles
-8. Psoriasis
-9. Schizophrenia
-10. Lyme disease
-11. HPV
-12. Herpes
-13. Pneumonia
-14. Fibromyalgia
-15. Scabies
-16. Chlamydia
-17. Endometriosis
-18. Strep throat
-19. Diverticulitis
-20. Bronchitis
 
 
 ### References
