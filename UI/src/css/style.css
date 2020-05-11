@@ -18,7 +18,7 @@ label {
 
 .search-box {
   position: absolute;
-  top: 4%;
+  top: 8%;
   left: 32%;
   height: 50px;
   border-radius: 50px;
@@ -50,13 +50,13 @@ label {
   line-height: 40px;
 }
 
-#left {
+/* #left {
   width: 30%;
   height: 100%;
   position: fixed;
   margin: 20px;
   margin-left: 11px;
-}
+} */
 
 #results {
   top: 30%;
@@ -137,4 +137,21 @@ ul.tabs li.current {
 
 .v {
   font-weight: bold;
+}
+
+.current {
+  color: rgb(33, 127, 235);
+}
+
+#pagin li {
+  display: inline-block;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  text-align: center;
 }
