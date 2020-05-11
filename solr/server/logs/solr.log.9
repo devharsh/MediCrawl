@@ -1,415 +1,202 @@
-2020-04-29 02:53:16.199 INFO  (main) [   ] o.e.j.u.log Logging initialized @3819ms to org.eclipse.jetty.util.log.Slf4jLog
-2020-04-29 02:53:16.628 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 12.0.2+10
-2020-04-29 02:53:16.674 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/vaish/Documents/Projects/Projects/CS609_MediCrawl/solr/server/contexts/] at interval 0
-2020-04-29 02:53:18.020 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2020-04-29 02:53:18.041 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2020-04-29 02:53:18.041 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2020-04-29 02:53:18.045 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2020-04-29 02:53:18.151 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2020-04-29 02:53:18.160 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.0
-2020-04-29 02:53:18.160 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2020-04-29 02:53:18.160 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr
-2020-04-29 02:53:18.160 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-29T02:53:18.160942500Z
-2020-04-29 02:53:18.221 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr
-2020-04-29 02:53:18.230 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\solr.xml
-2020-04-29 02:53:18.349 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1c7696c6, but no JMX reporters were configured - adding default JMX reporter.
-2020-04-29 02:53:19.148 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2020-04-29 02:53:19.410 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@37191ef0[provider=null,keyStore=null,trustStore=null]
-2020-04-29 02:53:19.410 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@37191ef0[provider=null,keyStore=null,trustStore=null]
-2020-04-29 02:53:19.717 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@3964d79[provider=null,keyStore=null,trustStore=null]
-2020-04-29 02:53:19.717 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@3964d79[provider=null,keyStore=null,trustStore=null]
-2020-04-29 02:53:19.762 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2020-04-29 02:53:20.192 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2020-04-29 02:53:20.198 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2020-04-29 02:53:20.340 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1c7696c6
-2020-04-29 02:53:20.342 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1c7696c6
-2020-04-29 02:53:20.352 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1c7696c6
-2020-04-29 02:53:20.464 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr
-2020-04-29 02:53:20.464 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [nutch]
-2020-04-29 02:53:20.593 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrConfig Couldn't add files from C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\contrib\ltr\lib filtered by .*\.jar to classpath: C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\contrib\ltr\lib
-2020-04-29 02:53:20.598 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader [nutch] Added 1 libs to classloader, from paths: [/C:/Users/vaish/Documents/Projects/Projects/CS609_MediCrawl/solr/dist]
-2020-04-29 02:53:20.993 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.0
-2020-04-29 02:53:21.279 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.IndexSchema [nutch] Schema name=nutch
-2020-04-29 02:53:21.361 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
-2020-04-29 02:53:21.368 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
-2020-04-29 02:53:21.380 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@3e5499cc{/solr,file:///C:/Users/vaish/Documents/Projects/Projects/CS609_MediCrawl/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server/solr-webapp/webapp}
-2020-04-29 02:53:21.382 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
-2020-04-29 02:53:21.392 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
-2020-04-29 02:53:21.396 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@22875539{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2020-04-29 02:53:21.396 INFO  (main) [   ] o.e.j.s.Server Started @9021ms
-2020-04-29 02:53:21.404 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
-2020-04-29 02:53:21.409 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
-2020-04-29 02:53:21.471 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
-2020-04-29 02:53:21.477 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
-2020-04-29 02:53:21.743 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
-2020-04-29 02:53:21.772 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.CoreContainer Creating SolrCore 'nutch' using configuration from instancedir C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\nutch, trusted=true
-2020-04-29 02:53:21.817 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1c7696c6
-2020-04-29 02:53:21.845 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\nutch], dataDir=[C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\nutch\data\]
-2020-04-29 02:53:23.086 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2020-04-29 02:53:23.086 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2020-04-29 02:53:23.146 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2020-04-29 02:53:23.146 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2020-04-29 02:53:23.415 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@797c8575[nutch] main]
-2020-04-29 02:53:23.450 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\nutch\conf
-2020-04-29 02:53:23.478 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.ltr.store.rest.ManagedFeatureStore for path /schema/feature-store
-2020-04-29 02:53:23.480 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_feature-store.json using file:dir=C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\nutch\conf
-2020-04-29 02:53:23.480 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResource Loaded initArgs {} for /schema/feature-store
-2020-04-29 02:53:23.480 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore ------ managed feature ~ loading ------
-2020-04-29 02:53:23.480 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore register feature based on {name=originalScore, class=org.apache.solr.ltr.feature.OriginalScoreFeature, params={}, store=_DEFAULT_}
-2020-04-29 02:53:23.486 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore register feature based on {name=titleLength, class=org.apache.solr.ltr.feature.FieldLengthFeature, params={field=title}, store=_DEFAULT_}
-2020-04-29 02:53:23.497 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore register feature based on {name=contentLength, class=org.apache.solr.ltr.feature.FieldLengthFeature, params={field=content}, store=_DEFAULT_}
-2020-04-29 02:53:23.499 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResource Notified 1 observers of /schema/feature-store
-2020-04-29 02:53:23.499 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.RestManager Registered new managed resource /schema/feature-store
-2020-04-29 02:53:23.503 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.ltr.store.rest.ManagedModelStore for path /schema/model-store
-2020-04-29 02:53:23.505 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_model-store.json using file:dir=C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\nutch\conf
-2020-04-29 02:53:23.505 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResource Loaded initArgs {} for /schema/model-store
-2020-04-29 02:53:23.505 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedModelStore INIT model store
-2020-04-29 02:53:23.505 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedModelStore ------ managed models ~ loading ------
-2020-04-29 02:53:23.518 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedModelStore adding model myModel
-2020-04-29 02:53:23.518 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResource Notified 1 observers of /schema/model-store
-2020-04-29 02:53:23.518 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.RestManager Registered new managed resource /schema/model-store
-2020-04-29 02:53:23.539 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2020-04-29 02:53:23.553 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2020-04-29 02:53:23.578 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2020-04-29 02:53:23.622 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@797c8575[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.0):C779/637:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585714207071}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_1(8.5.0):C5:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585764132753}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.5.0):C258/4:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585764524275}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_3(8.5.0):C3385/70:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585775495790}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1)))}
-2020-04-29 02:53:23.622 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2020-04-29 02:53:23.622 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2020-04-29 02:53:23.648 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@797c8575[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.0):C779/637:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585714207071}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_1(8.5.0):C5:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585764132753}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.5.0):C258/4:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585764524275}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_3(8.5.0):C3385/70:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585775495790}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1)))}
-2020-04-29 02:53:26.153 INFO  (qtp1318227903-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=92
-2020-04-29 02:54:24.459 ERROR (qtp1318227903-20) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname: Missing end quote for string at pos 0 str='''
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:392)
-	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:145)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:123)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:99)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:140)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:302)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
-	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:500)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-Caused by: org.apache.solr.search.SyntaxError: Missing end quote for string at pos 0 str='''
-	at org.apache.solr.search.StrParser.getQuotedString(StrParser.java:278)
-	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:338)
-	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:86)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:333)
-	... 48 more
-
-2020-04-29 02:54:24.460 INFO  (qtp1318227903-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=search&fl=url,title'} status=400 QTime=28
-2020-04-29 02:54:34.814 ERROR (qtp1318227903-22) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error parsing fieldname: Missing end quote for string at pos 0 str='''
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:392)
-	at org.apache.solr.search.SolrReturnFields.parseFieldList(SolrReturnFields.java:145)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:123)
-	at org.apache.solr.search.SolrReturnFields.<init>(SolrReturnFields.java:99)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:140)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:302)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
-	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:500)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-Caused by: org.apache.solr.search.SyntaxError: Missing end quote for string at pos 0 str='''
-	at org.apache.solr.search.StrParser.getQuotedString(StrParser.java:278)
-	at org.apache.solr.search.FunctionQParser.parseValueSource(FunctionQParser.java:338)
-	at org.apache.solr.search.FunctionQParser.parse(FunctionQParser.java:86)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
-	at org.apache.solr.search.SolrReturnFields.add(SolrReturnFields.java:333)
-	... 48 more
-
-2020-04-29 02:54:34.814 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title'} status=400 QTime=1
-2020-04-29 02:54:40.248 INFO  (qtp1318227903-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=167
-2020-04-29 02:54:50.522 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={srsearch=s&q=search&fl=url,title&format=json&action=query&list=search} hits=2980 status=0 QTime=32
-2020-04-29 02:54:50.611 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={srsearch=si&q=search&fl=url,title&format=json&action=query&list=search} hits=2980 status=0 QTime=2
-2020-04-29 02:54:50.829 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={srsearch=sin&q=search&fl=url,title&format=json&action=query&list=search} hits=2980 status=0 QTime=2
-2020-04-29 02:54:51.046 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={srsearch=sinu&q=search&fl=url,title&format=json&action=query&list=search} hits=2980 status=0 QTime=2
-2020-04-29 02:54:51.167 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={srsearch=sinus&q=search&fl=url,title&format=json&action=query&list=search} hits=2980 status=0 QTime=2
-2020-04-29 03:05:21.987 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=q&fl=url,title} hits=473 status=0 QTime=32
-2020-04-29 03:05:22.067 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=q&fl=url,title} hits=473 status=0 QTime=0
-2020-04-29 03:05:22.289 INFO  (qtp1318227903-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=q&fl=url,title} hits=473 status=0 QTime=2
-2020-04-29 03:05:22.498 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=q&fl=url,title} hits=473 status=0 QTime=1
-2020-04-29 03:05:22.676 INFO  (qtp1318227903-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=q&fl=url,title} hits=473 status=0 QTime=1
-2020-04-29 03:06:33.014 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=s&fl=url,title} hits=899 status=0 QTime=31
-2020-04-29 03:06:33.160 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=14
-2020-04-29 03:06:33.390 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=22
-2020-04-29 03:06:33.579 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=2
-2020-04-29 03:06:33.731 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 03:07:17.342 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=0
-2020-04-29 03:07:27.273 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=1
-2020-04-29 03:07:27.330 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=0
-2020-04-29 03:07:27.554 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=1
-2020-04-29 03:07:27.727 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=0
-2020-04-29 03:07:27.880 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=2
-2020-04-29 03:13:00.726 INFO  (qtp1318227903-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=s&fl=url,title} hits=899 status=0 QTime=1
-2020-04-29 03:13:00.837 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=0
-2020-04-29 03:13:01.113 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=2
-2020-04-29 03:13:01.311 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=2
-2020-04-29 03:13:01.472 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 03:13:44.523 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=s&fl=url,title} hits=899 status=0 QTime=0
-2020-04-29 03:13:44.608 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=0
-2020-04-29 03:13:44.827 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=1
-2020-04-29 03:13:45.023 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=1
-2020-04-29 03:13:45.254 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=2
-2020-04-29 03:15:21.909 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=c&fl=url,title} hits=760 status=0 QTime=22
-2020-04-29 03:15:22.142 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cn&fl=url,title} hits=23 status=0 QTime=17
-2020-04-29 03:15:22.713 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=c&fl=url,title} hits=760 status=0 QTime=1
-2020-04-29 03:15:24.191 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=ca&fl=url,title} hits=141 status=0 QTime=15
-2020-04-29 03:15:24.780 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=can&fl=url,title} hits=2159 status=0 QTime=19
-2020-04-29 03:15:25.070 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cance&fl=url,title} hits=1 status=0 QTime=8
-2020-04-29 03:15:25.501 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=18
-2020-04-29 03:15:25.514 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=1
-2020-04-29 03:15:35.797 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=1
-2020-04-29 03:16:49.968 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=c&fl=url,title} hits=760 status=0 QTime=1
-2020-04-29 03:16:53.792 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=ca&fl=url,title} hits=141 status=0 QTime=1
-2020-04-29 03:16:53.974 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=can&fl=url,title} hits=2159 status=0 QTime=1
-2020-04-29 03:16:54.416 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cance&fl=url,title} hits=1 status=0 QTime=2
-2020-04-29 03:16:54.774 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=2
-2020-04-29 03:16:54.792 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=0
-2020-04-29 03:23:15.222 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=s&fl=url,title} hits=899 status=0 QTime=1
-2020-04-29 03:23:15.330 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=1
-2020-04-29 03:23:15.544 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=3
-2020-04-29 03:23:15.764 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=2
-2020-04-29 03:23:16.305 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=2
-2020-04-29 03:26:57.444 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=&fl=url,title&format=json} hits=0 status=0 QTime=45
-2020-04-29 03:28:31.259 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=&fl=url,title&format=json} hits=0 status=0 QTime=0
-2020-04-29 03:29:01.040 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=&fl=url,title&format=json} hits=0 status=0 QTime=0
-2020-04-29 03:31:01.194 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=&fl=url,title} hits=0 status=0 QTime=0
-2020-04-29 03:31:30.399 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=&fl=url,title} hits=0 status=0 QTime=1
-2020-04-29 03:32:22.963 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=&fl=url,title} hits=0 status=0 QTime=1
-2020-04-29 03:32:39.863 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=&fl=url,title} hits=0 status=0 QTime=0
-2020-04-29 03:33:32.205 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=&fl=url,title} hits=0 status=0 QTime=0
-2020-04-29 03:34:14.091 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=s&fl=url,title} hits=899 status=0 QTime=2
-2020-04-29 03:34:14.436 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=1
-2020-04-29 03:34:14.672 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=1
-2020-04-29 03:34:14.882 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=1
-2020-04-29 03:34:15.172 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 03:39:10.529 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=s&fl=url,title} hits=899 status=0 QTime=2
-2020-04-29 03:39:10.623 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=0
-2020-04-29 03:39:10.858 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=1
-2020-04-29 03:39:11.977 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=1
-2020-04-29 03:39:12.296 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 03:41:38.681 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=2
-2020-04-29 03:41:45.840 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=0
-2020-04-29 03:43:44.673 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=1
-2020-04-29 03:43:44.748 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=0
-2020-04-29 03:43:44.961 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=1
-2020-04-29 03:43:45.243 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=1
-2020-04-29 03:43:45.425 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=0
-2020-04-29 03:44:16.373 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=s&fl=url,title} hits=899 status=0 QTime=2
-2020-04-29 03:44:16.528 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=0
-2020-04-29 03:44:16.773 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=1
-2020-04-29 03:44:17.004 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=1
-2020-04-29 03:44:17.142 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=0
-2020-04-29 03:45:14.319 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=3
-2020-04-29 03:45:14.373 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=0
-2020-04-29 03:45:14.570 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=0
-2020-04-29 03:45:15.264 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=1
-2020-04-29 03:45:15.445 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 03:50:46.804 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=s&fl=url,title} hits=899 status=0 QTime=1
-2020-04-29 03:50:46.898 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=1
-2020-04-29 03:50:47.098 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=0
-2020-04-29 03:50:47.329 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=1
-2020-04-29 03:50:47.469 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 03:50:59.744 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=1
-2020-04-29 03:50:59.878 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=0
-2020-04-29 03:51:00.036 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=0
-2020-04-29 03:51:00.213 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=s&fl=url,title} hits=899 status=0 QTime=1
-2020-04-29 03:51:00.719 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=&fl=url,title} hits=0 status=0 QTime=0
-2020-04-29 03:51:00.975 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=c&fl=url,title} hits=760 status=0 QTime=2
-2020-04-29 03:51:01.228 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=can&fl=url,title} hits=2159 status=0 QTime=2
-2020-04-29 03:51:01.287 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=can&fl=url,title} hits=2159 status=0 QTime=1
-2020-04-29 03:51:01.525 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cance&fl=url,title} hits=1 status=0 QTime=1
-2020-04-29 03:51:01.824 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=1
-2020-04-29 03:51:01.860 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=0
-2020-04-29 03:52:08.708 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=c&fl=url,title} hits=760 status=0 QTime=1
-2020-04-29 03:52:08.857 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=can&fl=url,title} hits=2159 status=0 QTime=0
-2020-04-29 03:52:08.969 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=canc&fl=url,title} hits=0 status=0 QTime=3
-2020-04-29 03:52:09.166 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cance&fl=url,title} hits=1 status=0 QTime=1
-2020-04-29 03:52:09.460 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=1
-2020-04-29 03:52:09.500 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=1
-2020-04-29 03:56:47.667 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=c&fl=url,title} hits=760 status=0 QTime=28
-2020-04-29 03:56:47.784 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=can&fl=url,title} hits=2159 status=0 QTime=0
-2020-04-29 03:56:47.817 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=can&fl=url,title} hits=2159 status=0 QTime=1
-2020-04-29 03:56:48.081 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cance&fl=url,title} hits=1 status=0 QTime=0
-2020-04-29 03:56:48.267 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cance&fl=url,title} hits=1 status=0 QTime=1
-2020-04-29 03:56:48.721 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=0
-2020-04-29 04:06:08.015 INFO  (qtp1318227903-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=s&fl=url,title} hits=899 status=0 QTime=2
-2020-04-29 04:06:08.162 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=si&fl=url,title} hits=142 status=0 QTime=0
-2020-04-29 04:06:09.858 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sin&fl=url,title} hits=69 status=0 QTime=2
-2020-04-29 04:06:10.119 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinu&fl=url,title} hits=0 status=0 QTime=1
-2020-04-29 04:06:10.299 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:07:43.685 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:08:14.765 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:13:37.171 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=3
-2020-04-29 04:14:58.128 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=3
-2020-04-29 04:15:47.869 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=1
-2020-04-29 04:19:52.384 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=3
-2020-04-29 04:20:10.995 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:20:34.169 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:24:59.022 INFO  (qtp1318227903-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=10
-2020-04-29 04:25:39.128 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:25:42.707 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=6
-2020-04-29 04:25:43.516 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:25:44.131 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=0
-2020-04-29 04:25:45.134 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=0
-2020-04-29 04:25:45.633 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:25:45.850 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=2
-2020-04-29 04:26:46.788 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=2
-2020-04-29 04:27:19.289 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=0
-2020-04-29 04:28:27.577 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:31:17.226 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:33:22.270 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:33:35.406 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=0
-2020-04-29 04:34:04.261 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=0
-2020-04-29 04:34:34.270 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=1
-2020-04-29 04:34:57.496 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:35:08.386 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:35:16.908 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=PCOD&fl=url,title} hits=0 status=0 QTime=44
-2020-04-29 04:35:33.709 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=tumor&fl=url,title} hits=199 status=0 QTime=52
-2020-04-29 04:35:59.829 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=tumor&fl=url,title} hits=199 status=0 QTime=3
-2020-04-29 04:46:38.460 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:47:23.939 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:47:46.084 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=2
-2020-04-29 04:49:05.755 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=1
-2020-04-29 04:50:08.129 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 04:56:01.078 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=6
-2020-04-29 04:57:18.765 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=8
-2020-04-29 04:57:59.247 INFO  (qtp1318227903-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=4
-2020-04-29 05:01:50.489 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 05:02:56.436 INFO  (qtp1318227903-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=1
-2020-04-29 05:03:46.302 INFO  (qtp1318227903-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=1
-2020-04-29 05:05:36.993 INFO  (qtp1318227903-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 05:06:01.392 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=0
-2020-04-29 05:06:19.112 INFO  (qtp1318227903-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 05:07:54.778 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=&fl=url,title} hits=0 status=0 QTime=2
-2020-04-29 05:08:03.435 INFO  (qtp1318227903-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=+sinus&fl=url,title} hits=39 status=0 QTime=11
-2020-04-29 05:10:22.766 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=1
-2020-04-29 05:11:17.371 INFO  (qtp1318227903-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=2
-2020-04-29 05:11:53.415 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=breast+cancer&fl=url,title} hits=1122 status=0 QTime=148
-2020-04-29 05:12:20.879 INFO  (qtp1318227903-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 05:13:54.852 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=1
-2020-04-29 05:14:20.896 INFO  (qtp1318227903-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 05:15:05.466 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus} hits=39 status=0 QTime=1
-2020-04-29 05:16:53.201 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=breast+cancer&fl=url,title,anchor} hits=1122 status=0 QTime=27
-2020-04-29 05:17:34.814 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title,anchor} hits=1083 status=0 QTime=1
-2020-04-29 05:18:04.395 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title,anchor} hits=39 status=0 QTime=1
-2020-04-29 05:18:40.734 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title,anchor} hits=39 status=0 QTime=0
-2020-04-29 05:20:03.576 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title,anchor} hits=39 status=0 QTime=1
-2020-04-29 05:21:14.074 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title,anchor} hits=39 status=0 QTime=1
-2020-04-29 05:22:02.302 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title,anchor} hits=39 status=0 QTime=2
-2020-04-29 05:24:44.965 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title,anchor} hits=39 status=0 QTime=2
-2020-04-29 05:25:54.557 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title,anchor} hits=1083 status=0 QTime=2
-2020-04-29 05:26:12.220 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title,anchor} hits=39 status=0 QTime=0
-2020-04-29 05:28:04.481 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title,anchor} hits=39 status=0 QTime=1
-2020-04-29 05:29:08.169 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title,anchor} hits=39 status=0 QTime=0
-2020-04-29 05:29:35.819 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=tumor&fl=url,title,anchor} hits=199 status=0 QTime=3
-2020-04-29 05:30:07.300 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title,anchor} hits=39 status=0 QTime=1
-2020-04-29 05:30:11.524 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=tumor&fl=url,title,anchor} hits=199 status=0 QTime=1
-2020-04-29 05:32:19.470 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 05:34:31.801 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 05:34:59.721 INFO  (qtp1318227903-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 05:36:21.516 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=url,title} hits=39 status=0 QTime=1
-2020-04-29 05:38:57.338 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=2
-2020-04-29 05:39:21.046 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=url,title} hits=1083 status=0 QTime=2
-2020-04-29 05:42:03.755 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=breast+cancer&fl=url,title} hits=1122 status=0 QTime=4
-2020-04-29 05:44:46.999 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=heart+attack&fl=url,title} hits=1104 status=0 QTime=29
-2020-04-29 05:46:37.191 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={fl=title,+url} hits=0 status=0 QTime=0
-2020-04-29 05:46:54.434 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=tumor&fl=title,url} hits=199 status=0 QTime=0
-2020-04-29 05:47:44.579 INFO  (qtp1318227903-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588139264433} status=0 QTime=15
-2020-04-29 05:47:44.665 INFO  (qtp1318227903-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588139264434} status=0 QTime=99
-2020-04-29 05:47:44.719 INFO  (qtp1318227903-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588139264434} status=0 QTime=45
-2020-04-29 05:47:47.289 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1588139264434&ts=1588139264434} status=503 QTime=6
-2020-04-29 05:47:47.291 INFO  (qtp1318227903-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588139264433} status=0 QTime=0
-2020-04-29 05:47:47.307 INFO  (qtp1318227903-24) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1588139267241} status=0 QTime=46
-2020-04-29 05:47:47.314 INFO  (qtp1318227903-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1588139267241} status=0 QTime=40
-2020-04-29 05:47:47.408 INFO  (qtp1318227903-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1588139267241} status=0 QTime=127
-2020-04-29 05:47:47.453 INFO  (qtp1318227903-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588139264434} status=0 QTime=171
-2020-04-29 05:47:51.812 INFO  (qtp1318227903-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588139264433} status=0 QTime=0
-2020-04-29 05:47:51.871 INFO  (qtp1318227903-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588139264434} status=0 QTime=55
-2020-04-29 05:48:04.081 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&fl=title,url&_=1588139271777} hits=3716 status=0 QTime=29
-2020-04-29 05:48:11.602 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&fl=title,url,anchor&_=1588139271777} hits=3716 status=0 QTime=0
-2020-04-29 05:48:42.100 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=cancer&fl=title,url,anchor&_=1588139271777} hits=1083 status=0 QTime=4
-2020-04-29 05:49:31.799 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url,anchor&_=1588139271777} hits=39 status=0 QTime=5
-2020-04-29 05:49:54.946 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url,anchor&start=0&rows=100&_=1588139271777} hits=39 status=0 QTime=29
-2020-04-29 05:50:04.161 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url,anchor&start=0&rows=10&_=1588139271777} hits=39 status=0 QTime=0
-2020-04-29 05:50:16.991 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url,anchor&start=0&rows=5&_=1588139271777} hits=39 status=0 QTime=0
-2020-04-29 05:50:29.349 ERROR (qtp1318227903-23) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'title', pos=5
+<<<<<<< HEAD
+2020-04-15 22:14:55.755 INFO  (main) [   ] o.e.j.u.log Logging initialized @1202ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-04-15 22:14:55.973 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 14+36-1461
+2020-04-15 22:14:55.994 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/devharsh/Downloads/MediCrawl/solr/server/contexts/] at interval 0
+2020-04-15 22:14:56.308 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-04-15 22:14:56.317 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-04-15 22:14:56.317 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-04-15 22:14:56.320 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2020-04-15 22:14:56.416 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-04-15 22:14:56.421 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solrâ„¢ version 8.5.0
+2020-04-15 22:14:56.421 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-04-15 22:14:56.421 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/devharsh/Downloads/MediCrawl/solr
+2020-04-15 22:14:56.421 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-15T22:14:56.421351Z
+2020-04-15 22:14:56.450 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/devharsh/Downloads/MediCrawl/solr/server/solr
+2020-04-15 22:14:56.457 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/devharsh/Downloads/MediCrawl/solr/server/solr/solr.xml
+2020-04-15 22:14:56.542 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@5ba3f27a, but no JMX reporters were configured - adding default JMX reporter.
+2020-04-15 22:14:57.029 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-04-15 22:14:57.273 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@56d93692[provider=null,keyStore=null,trustStore=null]
+2020-04-15 22:14:57.273 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@56d93692[provider=null,keyStore=null,trustStore=null]
+2020-04-15 22:14:57.424 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1c5c616f[provider=null,keyStore=null,trustStore=null]
+2020-04-15 22:14:57.425 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1c5c616f[provider=null,keyStore=null,trustStore=null]
+2020-04-15 22:14:57.439 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-04-15 22:14:57.603 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-04-15 22:14:57.606 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-04-15 22:14:57.681 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5ba3f27a
+2020-04-15 22:14:57.681 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5ba3f27a
+2020-04-15 22:14:57.685 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5ba3f27a
+2020-04-15 22:14:57.742 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/devharsh/Downloads/MediCrawl/solr/server/solr
+2020-04-15 22:14:57.742 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [nutch]
+2020-04-15 22:14:57.782 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrConfig Couldn't add files from /Users/devharsh/Downloads/MediCrawl/solr/contrib/ltr/lib filtered by .*\.jar to classpath: /Users/devharsh/Downloads/MediCrawl/solr/contrib/ltr/lib
+2020-04-15 22:14:57.786 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader [nutch] Added 1 libs to classloader, from paths: [/Users/devharsh/Downloads/MediCrawl/solr/dist]
+2020-04-15 22:14:57.812 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1522d8a0{/solr,file:///Users/devharsh/Downloads/MediCrawl/solr/server/solr-webapp/webapp/,AVAILABLE}{/Users/devharsh/Downloads/MediCrawl/solr/server/solr-webapp/webapp}
+2020-04-15 22:14:57.821 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@73194df{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-04-15 22:14:57.821 INFO  (main) [   ] o.e.j.s.Server Started @3270ms
+2020-04-15 22:14:57.964 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.0
+2020-04-15 22:14:58.087 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.IndexSchema [nutch] Schema name=nutch
+2020-04-15 22:14:58.123 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2020-04-15 22:14:58.125 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2020-04-15 22:14:58.127 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2020-04-15 22:14:58.131 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2020-04-15 22:14:58.136 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2020-04-15 22:14:58.138 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2020-04-15 22:14:58.165 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2020-04-15 22:14:58.167 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2020-04-15 22:14:58.266 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2020-04-15 22:14:58.276 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.CoreContainer Creating SolrCore 'nutch' using configuration from instancedir /Users/devharsh/Downloads/MediCrawl/solr/server/solr/nutch, trusted=true
+2020-04-15 22:14:58.301 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5ba3f27a
+2020-04-15 22:14:58.315 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [/Users/devharsh/Downloads/MediCrawl/solr/server/solr/nutch], dataDir=[/Users/devharsh/Downloads/MediCrawl/solr/server/solr/nutch/data/]
+2020-04-15 22:14:58.754 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-04-15 22:14:58.754 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-04-15 22:14:58.774 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-04-15 22:14:58.774 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-04-15 22:14:58.899 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@bbb4994[nutch] main]
+2020-04-15 22:14:58.907 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/devharsh/Downloads/MediCrawl/solr/server/solr/nutch/conf
+2020-04-15 22:14:58.920 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.ltr.store.rest.ManagedFeatureStore for path /schema/feature-store
+2020-04-15 22:14:58.922 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_feature-store.json using file:dir=/Users/devharsh/Downloads/MediCrawl/solr/server/solr/nutch/conf
+2020-04-15 22:14:58.922 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResource Loaded initArgs {} for /schema/feature-store
+2020-04-15 22:14:58.922 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore ------ managed feature ~ loading ------
+2020-04-15 22:14:58.922 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore register feature based on {name=originalScore, class=org.apache.solr.ltr.feature.OriginalScoreFeature, params={}, store=_DEFAULT_}
+2020-04-15 22:14:58.924 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore register feature based on {name=titleLength, class=org.apache.solr.ltr.feature.FieldLengthFeature, params={field=title}, store=_DEFAULT_}
+2020-04-15 22:14:58.930 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore register feature based on {name=contentLength, class=org.apache.solr.ltr.feature.FieldLengthFeature, params={field=content}, store=_DEFAULT_}
+2020-04-15 22:14:58.932 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResource Notified 1 observers of /schema/feature-store
+2020-04-15 22:14:58.932 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.RestManager Registered new managed resource /schema/feature-store
+2020-04-15 22:14:58.934 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.ltr.store.rest.ManagedModelStore for path /schema/model-store
+2020-04-15 22:14:58.935 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_model-store.json using file:dir=/Users/devharsh/Downloads/MediCrawl/solr/server/solr/nutch/conf
+2020-04-15 22:14:58.935 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResource Loaded initArgs {} for /schema/model-store
+2020-04-15 22:14:58.935 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedModelStore INIT model store
+2020-04-15 22:14:58.935 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedModelStore ------ managed models ~ loading ------
+2020-04-15 22:14:58.941 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedModelStore adding model myModel
+2020-04-15 22:14:58.942 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResource Notified 1 observers of /schema/model-store
+2020-04-15 22:14:58.942 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.RestManager Registered new managed resource /schema/model-store
+2020-04-15 22:14:58.951 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-04-15 22:14:58.957 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-04-15 22:14:58.967 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-04-15 22:14:58.987 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@bbb4994[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.0):C779/637:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585714207071}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_1(8.5.0):C5:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585764132753}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.5.0):C258/4:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585764524275}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_3(8.5.0):C3385/70:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585775495790}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1)))}
+2020-04-15 22:14:58.987 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-04-15 22:14:58.987 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-04-15 22:14:58.993 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@bbb4994[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.0):C779/637:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585714207071}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_1(8.5.0):C5:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585764132753}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.5.0):C258/4:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585764524275}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_3(8.5.0):C3385/70:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585775495790}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1)))}
+2020-04-15 22:15:29.353 INFO  (qtp1309335839-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=test&fl=id,score,[features]} hits=702 status=0 QTime=76
+2020-04-15 22:15:41.229 INFO  (qtp1309335839-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1586988941144} status=0 QTime=1
+2020-04-15 22:15:41.234 INFO  (qtp1309335839-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1586988941144} status=0 QTime=6
+2020-04-15 22:15:41.240 INFO  (qtp1309335839-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1586988941144} status=0 QTime=3
+2020-04-15 22:15:42.771 INFO  (qtp1309335839-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1586988941144} status=0 QTime=0
+2020-04-15 22:15:42.777 INFO  (qtp1309335839-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1586988941144} status=0 QTime=6
+2020-04-15 22:15:42.779 INFO  (qtp1309335839-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1586988941144} status=0 QTime=8
+2020-04-15 22:15:42.816 INFO  (qtp1309335839-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1586988941144} status=0 QTime=0
+2020-04-15 22:15:42.818 INFO  (qtp1309335839-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1586988941144} status=0 QTime=2
+2020-04-15 22:15:42.820 INFO  (qtp1309335839-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1586988941144} status=0 QTime=3
+2020-04-15 22:16:05.359 INFO  (qtp1309335839-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=cholestrol&fl=id,score,[features]} hits=0 status=0 QTime=2
+2020-04-15 22:16:17.539 INFO  (qtp1309335839-25) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=covid19&fl=id,score,[features]} hits=76 status=0 QTime=10
+2020-04-15 22:25:54.882 INFO  (qtp1309335839-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=covid19&fl=id,score,[features]} hits=76 status=0 QTime=0
+2020-04-15 22:29:16.758 INFO  (qtp1309335839-26) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=covid19&fl=id,score,[features]} hits=76 status=0 QTime=1
+2020-04-15 22:30:04.401 INFO  (qtp1309335839-50) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=covid19&fl=id,score,[features]} hits=76 status=0 QTime=0
+2020-04-15 22:30:23.461 INFO  (qtp1309335839-47) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=covid19&fl=id,score,[features]} hits=76 status=0 QTime=0
+2020-04-15 22:30:50.163 INFO  (qtp1309335839-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=covid19&fl=id,score,[features]} hits=76 status=0 QTime=0
+2020-04-15 22:31:41.356 INFO  (qtp1309335839-26) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=breast+cancer&fl=url,title} hits=1122 status=0 QTime=24
+2020-04-15 22:32:14.427 INFO  (qtp1309335839-47) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=breast+cancer&fl=url,title} hits=1122 status=0 QTime=1
+2020-04-15 22:32:39.789 INFO  (qtp1309335839-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=breast+cancer&fl=url,title} hits=1122 status=0 QTime=0
+2020-04-15 22:34:38.237 INFO  (qtp1309335839-41) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=breast+cancer&fl=url,title} hits=1122 status=0 QTime=0
+2020-04-15 22:35:07.962 INFO  (qtp1309335839-26) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=breast+cancer&fl=url,title} hits=1122 status=0 QTime=0
+2020-04-15 22:35:25.613 INFO  (qtp1309335839-47) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=breast+cancer&fl=url,title} hits=1122 status=0 QTime=0
+2020-04-15 22:36:11.769 INFO  (qtp1309335839-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/query params={q=breast+cancer&fl=url,title} hits=1122 status=0 QTime=0
+2020-04-16 03:56:35.678 INFO  (Thread-0) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@73194df{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-04-16 03:56:35.679 INFO  (Thread-0) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-04-16 03:56:35.684 INFO  (Thread-0) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1655955258
+2020-04-16 03:56:35.686 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@2d591097
+2020-04-16 03:56:35.686 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=SolrCore@2d591097
+2020-04-16 03:56:35.687 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@67d096e9: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch / com.codahale.metrics.MetricRegistry@5104ee2
+2020-04-16 03:56:35.712 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-04-16 03:56:35.730 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-04-16 03:56:35.730 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3374b5bc: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@118035c0
+2020-04-16 03:56:35.733 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-04-16 03:56:35.733 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@43e9089: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@65b34ac
+2020-04-16 03:56:35.735 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-04-16 03:56:35.735 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3c5dbdf8: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@1d364e0f
+2020-04-16 03:56:35.750 INFO  (Thread-0) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1522d8a0{/solr,null,UNAVAILABLE}{/Users/devharsh/Downloads/MediCrawl/solr/server/solr-webapp/webapp}
+=======
+2020-04-29 05:57:20.868 INFO  (main) [   ] o.e.j.u.log Logging initialized @5688ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-04-29 05:57:21.408 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 12.0.2+10
+2020-04-29 05:57:21.469 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/vaish/Documents/Projects/Projects/CS609_MediCrawl/solr/server/contexts/] at interval 0
+2020-04-29 05:57:23.133 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-04-29 05:57:23.155 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-04-29 05:57:23.155 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-04-29 05:57:23.162 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-04-29 05:57:23.295 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-04-29 05:57:23.304 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.0
+2020-04-29 05:57:23.304 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-04-29 05:57:23.304 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr
+2020-04-29 05:57:23.305 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-04-29T05:57:23.305083800Z
+2020-04-29 05:57:23.375 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr
+2020-04-29 05:57:23.386 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\solr.xml
+2020-04-29 05:57:23.521 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1c7696c6, but no JMX reporters were configured - adding default JMX reporter.
+2020-04-29 05:57:24.522 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-04-29 05:57:24.918 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@7048535f[provider=null,keyStore=null,trustStore=null]
+2020-04-29 05:57:24.919 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@7048535f[provider=null,keyStore=null,trustStore=null]
+2020-04-29 05:57:25.176 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@5ac6c4f2[provider=null,keyStore=null,trustStore=null]
+2020-04-29 05:57:25.176 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@5ac6c4f2[provider=null,keyStore=null,trustStore=null]
+2020-04-29 05:57:25.212 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-04-29 05:57:25.580 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-04-29 05:57:25.584 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-04-29 05:57:25.745 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1c7696c6
+2020-04-29 05:57:25.746 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1c7696c6
+2020-04-29 05:57:25.756 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1c7696c6
+2020-04-29 05:57:25.853 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr
+2020-04-29 05:57:25.853 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [nutch]
+2020-04-29 05:57:25.940 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrConfig Couldn't add files from C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\contrib\ltr\lib filtered by .*\.jar to classpath: C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\contrib\ltr\lib
+2020-04-29 05:57:25.946 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader [nutch] Added 1 libs to classloader, from paths: [/C:/Users/vaish/Documents/Projects/Projects/CS609_MediCrawl/solr/dist]
+2020-04-29 05:57:26.363 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.0
+2020-04-29 05:57:26.714 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.IndexSchema [nutch] Schema name=nutch
+2020-04-29 05:57:26.809 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2020-04-29 05:57:26.819 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2020-04-29 05:57:26.825 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2020-04-29 05:57:26.835 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2020-04-29 05:57:26.846 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2020-04-29 05:57:26.852 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2020-04-29 05:57:26.947 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2020-04-29 05:57:26.953 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2020-04-29 05:57:27.039 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@3e5499cc{/solr,file:///C:/Users/vaish/Documents/Projects/Projects/CS609_MediCrawl/solr/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server/solr-webapp/webapp}
+2020-04-29 05:57:27.056 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@22875539{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-04-29 05:57:27.057 INFO  (main) [   ] o.e.j.s.Server Started @11884ms
+2020-04-29 05:57:27.214 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2020-04-29 05:57:27.262 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.CoreContainer Creating SolrCore 'nutch' using configuration from instancedir C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\nutch, trusted=true
+2020-04-29 05:57:27.321 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1c7696c6
+2020-04-29 05:57:27.349 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\nutch], dataDir=[C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\nutch\data\]
+2020-04-29 05:57:28.391 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-04-29 05:57:28.391 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-04-29 05:57:28.477 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-04-29 05:57:28.477 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-04-29 05:57:28.795 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@586e8b4f[nutch] main]
+2020-04-29 05:57:28.813 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\nutch\conf
+2020-04-29 05:57:28.842 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.ltr.store.rest.ManagedFeatureStore for path /schema/feature-store
+2020-04-29 05:57:28.843 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_feature-store.json using file:dir=C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\nutch\conf
+2020-04-29 05:57:28.844 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResource Loaded initArgs {} for /schema/feature-store
+2020-04-29 05:57:28.844 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore ------ managed feature ~ loading ------
+2020-04-29 05:57:28.844 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore register feature based on {name=originalScore, class=org.apache.solr.ltr.feature.OriginalScoreFeature, params={}, store=_DEFAULT_}
+2020-04-29 05:57:28.852 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore register feature based on {name=titleLength, class=org.apache.solr.ltr.feature.FieldLengthFeature, params={field=title}, store=_DEFAULT_}
+2020-04-29 05:57:28.866 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore register feature based on {name=contentLength, class=org.apache.solr.ltr.feature.FieldLengthFeature, params={field=content}, store=_DEFAULT_}
+2020-04-29 05:57:28.868 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResource Notified 1 observers of /schema/feature-store
+2020-04-29 05:57:28.868 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.RestManager Registered new managed resource /schema/feature-store
+2020-04-29 05:57:28.872 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.ltr.store.rest.ManagedModelStore for path /schema/model-store
+2020-04-29 05:57:28.874 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_model-store.json using file:dir=C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server\solr\nutch\conf
+2020-04-29 05:57:28.874 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResource Loaded initArgs {} for /schema/model-store
+2020-04-29 05:57:28.875 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedModelStore INIT model store
+2020-04-29 05:57:28.875 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedModelStore ------ managed models ~ loading ------
+2020-04-29 05:57:28.889 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.l.s.r.ManagedModelStore adding model myModel
+2020-04-29 05:57:28.889 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResource Notified 1 observers of /schema/model-store
+2020-04-29 05:57:28.889 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.RestManager Registered new managed resource /schema/model-store
+2020-04-29 05:57:28.909 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-04-29 05:57:28.921 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-04-29 05:57:28.944 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-04-29 05:57:28.999 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@586e8b4f[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.0):C779/637:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585714207071}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_1(8.5.0):C5:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585764132753}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.5.0):C258/4:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585764524275}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_3(8.5.0):C3385/70:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585775495790}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1)))}
+2020-04-29 05:57:29.000 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-04-29 05:57:29.000 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-04-29 05:57:29.024 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@586e8b4f[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.0):C779/637:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585714207071}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_1(8.5.0):C5:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585764132753}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.5.0):C258/4:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585764524275}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_3(8.5.0):C3385/70:[diagnostics={java.vendor=Oracle Corporation, os=Mac OS X, java.version=14, java.vm.version=14+36-1461, lucene.version=8.5.0, os.arch=x86_64, java.runtime.version=14+36-1461, source=flush, os.version=10.15.3, timestamp=1585775495790}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1)))}
+2020-04-29 05:57:31.127 INFO  (qtp1318227903-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=51
+2020-04-29 05:57:34.725 INFO  (qtp1318227903-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588139264433} status=0 QTime=2
+2020-04-29 05:57:34.775 INFO  (qtp1318227903-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588139264434} status=0 QTime=52
+2020-04-29 05:57:39.877 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&_=1588139271777} hits=3716 status=0 QTime=73
+2020-04-29 05:58:07.919 ERROR (qtp1318227903-22) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'date dsc', pos=4
 	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
 	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
 	at org.apache.solr.search.QParser.getSortSpec(QParser.java:281)
@@ -459,128 +246,21 @@ Caused by: org.apache.solr.search.SyntaxError: Missing end quote for string at p
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
 	at java.base/java.lang.Thread.run(Thread.java:835)
 
-2020-04-29 05:50:29.350 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url,anchor&start=0&sort=title&rows=5&_=1588139271777} status=400 QTime=10
-2020-04-29 05:50:41.000 ERROR (qtp1318227903-19) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'title', pos=5
-	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
-	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
-	at org.apache.solr.search.QParser.getSortSpec(QParser.java:281)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:188)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:302)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
-	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:500)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-
-2020-04-29 05:50:41.000 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url,anchor&start=0&sort=title&_=1588139271777} status=400 QTime=1
-2020-04-29 05:50:48.235 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url,anchor&start=0&_=1588139271777} hits=39 status=0 QTime=0
-2020-04-29 05:51:08.162 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&df=title&fl=title,url,anchor&start=0&_=1588139271777} hits=0 status=0 QTime=5
-2020-04-29 05:51:20.667 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&df=title&fl=title,url&start=0&_=1588139271777} hits=0 status=0 QTime=4
-2020-04-29 05:51:26.211 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url&start=0&_=1588139271777} hits=39 status=0 QTime=0
-2020-04-29 05:51:47.862 ERROR (qtp1318227903-19) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'asc', pos=3
-	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
-	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
-	at org.apache.solr.search.QParser.getSortSpec(QParser.java:281)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:188)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:302)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
-	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:500)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-
-2020-04-29 05:51:47.862 INFO  (qtp1318227903-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url&start=0&sort=asc&_=1588139271777} status=400 QTime=4
-2020-04-29 05:51:55.722 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url&start=0&sort=title+asc&_=1588139271777} hits=39 status=0 QTime=106
-2020-04-29 05:52:32.664 INFO  (qtp1318227903-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url&start=0&sort=title+asc&wt=json&_=1588139271777} hits=39 status=0 QTime=2
-2020-04-29 05:52:37.609 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url&start=0&sort=title+asc&_=1588139271777} hits=39 status=0 QTime=1
-2020-04-29 05:52:43.355 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=sinus&fl=title,url&start=0&sort=title+asc&wt=json&_=1588139271777} hits=39 status=0 QTime=1
-2020-04-29 05:57:04.455 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@22875539{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2020-04-29 05:57:04.455 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2020-04-29 05:57:04.491 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1096682443
-2020-04-29 05:57:04.501 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@5f13dd8
-2020-04-29 05:57:04.501 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=SolrCore@5f13dd8
-2020-04-29 05:57:04.507 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@8b375de: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch / com.codahale.metrics.MetricRegistry@1cc93f17
-2020-04-29 05:57:04.612 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2020-04-29 05:57:04.690 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2020-04-29 05:57:04.690 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@68d7a2df: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@23057555
-2020-04-29 05:57:04.699 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2020-04-29 05:57:04.699 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2b680207: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@167bbda2
-2020-04-29 05:57:04.703 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2020-04-29 05:57:04.703 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@70887727: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@681e451d
-2020-04-29 05:57:04.799 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@3e5499cc{/solr,null,UNAVAILABLE}{C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server/solr-webapp/webapp}
+2020-04-29 05:58:07.920 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&sort=date+dsc&_=1588139271777} status=400 QTime=5
+2020-04-29 05:58:20.071 INFO  (qtp1318227903-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&sort=date+desc&_=1588139271777} hits=3716 status=0 QTime=53
+2020-04-29 05:58:55.608 INFO  (qtp1318227903-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=fever&fl=url,title} hits=682 status=0 QTime=57
+2020-04-29 06:05:24.900 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@22875539{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-04-29 06:05:24.901 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-04-29 06:05:24.908 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1096682443
+2020-04-29 06:05:24.910 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@40e8bbab
+2020-04-29 06:05:24.910 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=SolrCore@40e8bbab
+2020-04-29 06:05:24.911 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5e240fd8: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch / com.codahale.metrics.MetricRegistry@2ad2782a
+2020-04-29 06:05:24.963 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-04-29 06:05:25.029 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-04-29 06:05:25.031 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@561b61ed: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@580c10f9
+2020-04-29 06:05:25.044 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-04-29 06:05:25.045 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@36681447: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@6c9a1c82
+2020-04-29 06:05:25.048 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-04-29 06:05:25.048 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4d21c56e: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@39dd4f6
+2020-04-29 06:05:25.082 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@3e5499cc{/solr,null,UNAVAILABLE}{C:\Users\vaish\Documents\Projects\Projects\CS609_MediCrawl\solr\server/solr-webapp/webapp}
+>>>>>>> 52b66846e5ec89259332147b9369ec8bb7fc34bf
