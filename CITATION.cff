@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+title: "MediCrawl"
+abstract: "A web search engine for diseases, built with Apache Nutch for crawling and Apache Solr for indexing and Learning-to-Rank (LTR) ranking, with an HTML/JS/CSS search interface."
+authors:
+  - given-names: "Devharsh"
+    family-names: "Trivedi"
+    name-suffix: "Ph.D., CISSP"
+    email: "devharsh.1592@gmail.com"
+    city: "Washington"
+    region: "D.C."
+    post-code: "20003"
+    country: "US"
+license: "BSD-3-Clause"
+repository-code: "https://github.com/devharsh/MediCrawl"
+url: "https://github.com/devharsh/MediCrawl"
+keywords:
+  - "search-engine"
+  - "information-retrieval"
+  - "apache-solr"
+  - "apache-nutch"
+  - "learning-to-rank"
+  - "healthcare"
